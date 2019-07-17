@@ -1,0 +1,62 @@
+body {
+background-color: #00001a;
+display: flex;
+justify-content: center;
+
+}
+
+.btn {
+    background-color: blueviolet;
+
+ 
+}
+
+
+.h3 {
+    color: white;   
+    left: 0%;
+    height: 0%;
+
+}
+
+.control-label {
+    color: white;  
+  
+}
+
+
+.termos{
+    color: white;
+}
+
+.container {
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-decoration:none;
+  
+}
+
+.genero {
+    color: white;
+}
+
+.sr-only{
+    color: blueviolet;
+}
+
+.navbar {
+
+    left: 0%;
+    height: 0%;
+
+}
+
+.form-check {
+
+    color: white;
+}
+.col {
+    display: flex;
+    justify-content: baseline;
+}
