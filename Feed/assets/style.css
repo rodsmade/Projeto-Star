@@ -1,0 +1,41 @@
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 11rem;
+    margin: 2rem;
+    text-align: center;
+}
+
+body{
+    text-align: center;
+}
+
+li{
+    list-style-type: none;
+}
+
+.fill{
+
+background-image: url(images/original.gif);
+
+-webkit-background-clip: text;
+-webkit-text-fill-color:transparent;
+    
+}
+
+
+
+
+.bg-img {
+    background-image: url("images/universe.jpg");
+  
+    min-height: 50px;
+}
+
+
+li{
+    list-style-type: none;
+}
+
+footer{
+      text-align: center;
+  }
