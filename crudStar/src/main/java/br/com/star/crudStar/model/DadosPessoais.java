@@ -14,7 +14,7 @@ public class DadosPessoais {
 
     @Id
     @Column(name="id_dados_pessoais")
-    private Integer id;
+    private Long id;
 
     @Column(name = "url_foto_perfil")
     @Size(max=100)
