@@ -18,7 +18,7 @@ public class Usuario {
     private long id;
 
     private Integer qtdAmigos;
-
+    // conferir banco de dados
     @NotBlank
     private String nome;
     private String sobrenome;
