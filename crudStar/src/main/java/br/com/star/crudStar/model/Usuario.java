@@ -4,6 +4,7 @@ import lombok.Data;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
+import java.util.Date;
 
 
 @Data
@@ -12,6 +13,7 @@ import javax.validation.constraints.NotBlank;
 public class Usuario {
 
     @Id
+    @Column(name = "id_usuario")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
@@ -20,7 +22,7 @@ public class Usuario {
     @NotBlank
     private String nome;
     private String sobrenome;
-    //dataNascimento
+    private Date nascimento;
     private String handle;
     private String email;
     private String senha;
