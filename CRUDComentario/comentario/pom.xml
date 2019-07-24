@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" version="4">
+  <component name="NewModuleRootManager">
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
