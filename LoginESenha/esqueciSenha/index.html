@@ -4,61 +4,52 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="icon" type="image/png" href="./spacecraft.png">
+  <!-- ###Definir icone paginas#### -->
+  <!-- <link rel="icon" type="image/png" href="./spacecraft.png"> -->
   <title>
-    Social Star
+    Esqueci Senha
   </title>
   <!--     Fonts and icons     -->
-  <style>
-    @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
-    </style>
-  <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" /> -->
+  <!-- Fontes para padronizar -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   <!-- Nucleo Icons -->
-  <link href="./assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
   <!-- CSS Files -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link href="./assets/css/blk-design-system.css?v=1.0.0" rel="stylesheet" />
+  <link href="../assets/css/blk-design-system.css" rel="stylesheet" />
+ 
+ <script type = "text/javascript">
+function enviar() {
+  alert("Enviado com sucesso!");
+}
+ </script>
+
 </head>
 
 <body class="index-page">
-
-  <div class="container">
-    <div class="row mainRow">
-      <h1><span class="mainTitle">Star✦</span></h1>
-    <div class="night">
-        <div class="shooting_star"></div>
-        <div class="shooting_star"></div>
-        <div class="shooting_star"></div>
-        <div class="shooting_star"></div>
-        <div class="shooting_star"></div>
-        <div class="shooting_star"></div>
-        <div class="shooting_star"></div>
-        <div class="shooting_star"></div>
-        <div class="shooting_star"></div>
-        <div class="shooting_star"></div>
-        <div class="shooting_star"></div>
-        <div class="shooting_star"></div>
-        <div class="shooting_star"></div>
-        <div class="shooting_star"></div>
-        <div class="shooting_star"></div>
-        <div class="shooting_star"></div>
-        <div class="shooting_star"></div>
-        <div class="shooting_star"></div>
-        <div class="shooting_star"></div>
-        <div class="shooting_star"></div> 
-      </div>
-    </div>
-  </div>
-  Navbar
-   <nav class="navbar navbar-expand-lg fixed-top navbar-transparent " color-on-scroll="100">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-transparent " color-on-scroll="100">
     <div class="container">
+        <div class="row"> 
+            <div class="col-12">
+              <input type = "button"  Class="btn btn-primary" value = "Login" href="#Login" />
+            </div>                 
+          </div>
+
+      <!--
       <div class="navbar-translate">
-        <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-bar bar1"></span>
+        <a class="navbar-brand" href="https://demos.creative-tim.com/blk-design-system/index.html" rel="tooltip" title="Designed and Coded by Creative Tim" data-placement="bottom" target="_blank">
+          
+        </a>
+
+         <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation"> -->
+         <!-- <span class="navbar-toggler-bar bar1"></span>
           <span class="navbar-toggler-bar bar2"></span>
           <span class="navbar-toggler-bar bar3"></span>
         </button>
+      -->
+
       </div>
       <div class="collapse navbar-collapse justify-content-end" id="navigation">
         <div class="navbar-collapse-header">
@@ -79,7 +70,7 @@
     </div>
   </nav>
   <!-- End Navbar -->
-   <div class="wrapper">
+  <div class="container-fluid">
     <!-- Quadrados que precisam virar ESTRELAS -->
     <div class="page-header header-filter">
       <div class="squares square1"></div>
@@ -88,7 +79,7 @@
       <div class="squares square4"></div>
       <div class="squares square5"></div>
       <div class="squares square6"></div>
-      <div class="squares square7"></div> -->
+      <div class="squares square7"></div>
       <!-- Mensagem de inicio -->
       <div class="container">
         <div class="content-center brand">
@@ -96,88 +87,54 @@
           <h4>Um novo conceito de Rede Social, Star presente</h4>
           <form>
               <div class="row">
-                <div class="col">
-                  <label for="exampleInputEmail label0">Email</label>
-                  <input type="email" class="form-control" placeholder="E-mail">
+                <div class="col-4"></div>
+                <div class="col-4">
+                  <label for="exampleInputEmail">Email</label>
+                  <input type="email" class="form-control" placeholder="usuario@email.com">
                 </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <label for="exampleInputSenha label0">Senha</label>
-                  <input type="password" class="form-control" placeholder="Senha">
-                </div>
+                <div class="col-4"></div>
               </div>
               <br>
-              <div class="row">
+              <br>  
+              <br>
+              <br>
+              <div class="row"> 
                 <div class="col">
-                  <br>  
-                  <a href="../LoginESenha/esqueciSenha/index.html" >Esqueci a Senha</a>
-                </div> 
-                <div class="col">
-                  <button class="btn btn-primary btn-neutral">Entrar</button>
-                </div>  
-                <br>               
+                  <input type = "button"  Class="btn btn-primary btn-neutral" value = "Enviar e-mail" onclick = "enviar();" />
+                </div>                 
               </div>
-              <div class="row">
-                  <div class="col-12 btncadastrar">
-                      <a href="../cadastro/cadastro.html" ><button class="btn btn-primary btn-danger" id="btncadastrar">Cadastrar</button></a>
-                  </div>
-                </div>
             </form>
         </div>
       </div>
-    </div> -->
+    </div>
     <div class="main">
+      <!-- -->
       
-      
-    </div> 
+    </div>
     <!-- FOOTER -->
-   <footer class="footer">
-      <div class="container" id="footer">
+    <footer class="footer">
+      <div class="container">
         <div class="row">
-          <div class="col-md-3">
-            <h1 class="title">Star✦</h1>
-          </div> 
           <!-- links footer PRIMEIRA COLUNA -->
-          <div class="col-md-3">
-            <ul class="nav">
-              <li class="nav-item">
-                <a href="./index.html" class="nav-link">
-                  Home
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="./examples/landing-page.html" class="nav-link">
-                  Landing
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="./examples/register-page.html" class="nav-link">
-                  Register
-                </a>
-              </li>
-            </ul>
-          </div>
-          <!-- links footer SEGUNDA COLUNA -->
-          <div class="col-md-3">
+          <div class="col-4">
             <ul class="nav">
               <li class="nav-item">
                 <a href="#" class="nav-link">
-                  Contact Us
+                  Sobre nós
                 </a>
               </li>
-              <li class="nav-item">
+            </div>
+            <div class="col-4">
                 <a href="#" class="nav-link">
-                  About Us
+                  Contato
                 </a>
+            </div>
+            <div class="col-4">
+                <a href="#" class="nav-link">
+                  Sugestões</a>
               </li>
-              <li class="nav-item">
-                <a href="https://creative-tim.com/blog" class="nav-link">
-                  Blog
-                </a>
-              </li>
-              
-            </ul>
+            </div>
+          </ul>
           </div>
           </div>
         </div>
@@ -216,6 +173,8 @@
         }, 1000);
       }
     }
+
+
   </script>
 </body>
 
