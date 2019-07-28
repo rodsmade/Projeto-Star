@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/perfilstyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+
+    <title>Perfil</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12" style="padding: 0px;">
+                <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar sticky-top"
+                    id="bd-navbar">
+                    <div class="navbar-nav-scroll">
+                        <ul class="navbar-nav bd-navbar-nav flex-row">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="">Feed</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Contato</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="" rel="noopener">Sugestões</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://nacoesunidas.org/pos2015/" target="_blank">Sobre os
+                                    ODS</a>
+                            </li>
+                        </ul>
+                    </div>
+                </header>
+            </div>
+        </div>
+        <!-- CAPA E FOTO DE Perfil -->
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10" style="padding: 0px;">
+                <div class="card card1">
+                    <div class="card-header" style="height: 300px; padding: 0px;border-bottom: #435DB5;">
+                        <img class="card-img-top" src="./assets/imagens/capa.png" style="height: 300px;">
+                    </div>
+                    <div class="card-body" style="padding: 0px; height: 10px;">
+                        <div class="row" id="rowfotoPerfil&barraprogresso|navbar">
+                            <!-- foto de perfil -->
+                            <div class="col-2" style="position: relative; z-index:1;">
+                                <!-- <img src="./assets/imagens/fotoPerfil.jpg" -->
+                                <!-- style="width: 160px; height: 160px; border-radius: 90px"> -->
+                            </div>
+                            <!-- barra de progresso -->
+                            <div class="col-10" style="padding-top: 2px;">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                                        aria-valuemin="0" aria-valuemax="100">25%</div>
+                                    <div class="progress-bar" role="progressbar"
+                                        style="width: 55%; background-color: crimson;" aria-valuenow="55"
+                                        aria-valuemin="0" aria-valuemax="100">50%</div>
+                                    <div class="progress-bar" role="progressbar"
+                                        style="width: 20%; background-color:goldenrod;" aria-valuenow="15"
+                                        aria-valuemin="0" aria-valuemax="100">15%</div>
+                                </div>
+                                <!-- Nav tabs -->
+    <ul class="nav nav-tabs mb-5 d-flex justify-content-around" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="amizades-tab" data-toggle="tab" href="#amizades" role="tab"
+                    aria-controls="amizades" aria-selected="true">Amizades</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="meioamb-tab" data-toggle="tab" href="#meioamb" role="tab" aria-controls="meioamb"
+                    aria-selected="false">Timeline</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="esporte-tab" data-toggle="tab" href="#esporte" role="tab" aria-controls="esporte"
+                    aria-selected="false">Amigos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="esporte-tab" data-toggle="tab" href="#esporte" role="tab" aria-controls="esporte"
+                    aria-selected="false">Causas</a>
+            </li>
+    
+        </ul>
+        <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Publique</span>
+                </div>
+                <textarea class="form-control" aria-label="Com textarea"></textarea>
+            </div> 
+        
+        <!-- Tab panes -->
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane active show" id="amizades" role="tabpanel" aria-labelledby="amizades-tab">
+                <div class="card-columns">
+                    <div class="card">
+                        <img src="images/cheese1.jpg" class="card-img-top" alt="cheese slices">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title that wraps to a new line</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                    <div class="card p-3">
+                        <blockquote class="blockquote mb-0 card-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                            <footer class="blockquote-footer">
+                                <small class="text-muted">
+                                    Someone famous in <cite title="Source Title">Source Title</cite>
+                                </small>
+                            </footer>
+                        </blockquote>
+                    </div>
+                    <div class="card">
+                        <img src="images/cheese2.jpg" class="card-img-top" alt="cheese wiht holes">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                                content.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                    <div class="card bg-primary text-white text-center p-3">
+                        <blockquote class="blockquote mb-0">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+                            <footer class="blockquote-footer text-white">
+                                <small>
+                                    Someone famous in <cite title="Source Title">Source Title</cite>
+                                </small>
+                            </footer>
+                        </blockquote>
+                    </div>
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/cheese3.jpg" class="card-img-top" alt="cheesy pizza!">
+                    </div>
+                    <div class="card p-3 text-right">
+                        <blockquote class="blockquote mb-0">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                            <footer class="blockquote-footer">
+                                <small class="text-muted">
+                                    Someone famous in <cite title="Source Title">Source Title</cite>
+                                </small>
+                            </footer>
+                        </blockquote>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is another card with title and supporting text below. This card has
+                                some additional content to make it slightly taller overall.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                                
+                            </div>
+                            <!--fim barra de progresso-->
+                        </div>
+                        <!--fim row card-body-->
+                    </div>
+                    <!--fim cardbody-->
+
+                </div>
+                <!--fim card1-->
+                <!--Inicio TextArea-->
+                <!-- <div class="card card2">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Publique</span>
+                            </div>
+                            <textarea class="form-control" aria-label="Com textarea"></textarea>
+                        </div>                        
+                </div> -->
+                <!--fim textArea-->
+
+            </div>
+            <!--fim col-10-->            
+            
+        </div>
+        <!--fim container row1-->
+        
+        
+
+    </div>
+    <!--fim containerfluid-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <nav class="navbar navbar-expand fixed-bottom navbar-dark" id="Footer">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08"
+            aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarsExample08">
+            <ul class="navbar-nav">
+                <div class="row justify-content-around">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Quem somos
+                            <!-- <span class="sr-only">(current)</span> --></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">|</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">|</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ajuda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">|</a>
+                    </li>
+                    <div class="align-self-end">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-sign-out-alt"></i></a>
+                    </div>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
