@@ -1,9 +1,11 @@
 package br.com.star.crudStar.model;
 
 import lombok.Data;
+import lombok.ToString;
 
 import javax.persistence.*;
 
+@ToString
 @Data
 @Entity
 @Table(name = "Post")
@@ -23,5 +25,4 @@ public class Post {
     @Column(name = "url_foto")
     private String url_foto;
 
-    //criar ToString
 }
