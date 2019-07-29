@@ -1,8 +1,8 @@
-package br.com.star.crudStar.demo.controller;
+package br.com.star.crudStar.controller;
 
-import br.com.star.crudStar.demo.exception.ResourceNotFoundException;
-import br.com.star.crudStar.demo.model.Comentario;
-import br.com.star.crudStar.demo.repository.ComentarioRepository;
+import br.com.star.crudStar.exception.ResourceNotFoundException;
+import br.com.star.crudStar.model.Comentario;
+import br.com.star.crudStar.repository.ComentarioRepository;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;

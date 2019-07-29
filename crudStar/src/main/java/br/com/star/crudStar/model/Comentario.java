@@ -1,4 +1,4 @@
-package br.com.star.crudStar.demo.model;
+package br.com.star.crudStar.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
