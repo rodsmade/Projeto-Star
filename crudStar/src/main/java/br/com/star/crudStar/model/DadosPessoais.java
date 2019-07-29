@@ -12,6 +12,8 @@ import java.math.BigInteger;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
+@Table(name = "dados_pessoais")
+
 public class DadosPessoais {
 
     @Id
@@ -21,13 +23,13 @@ public class DadosPessoais {
 
     @Column(name = "url_foto_perfil")
     @Size(max=100)
-    private String urlFotoPerfil;
+    private String url_foto_perfil;
 
     private String genero;
 
     private String cidade;
 
-    @Column(name="CPF",unique = true)
+    @Column(name="cpf",unique = true)
     private BigInteger cpf;
 
     @Column(name = "cartao_credito",unique = true)

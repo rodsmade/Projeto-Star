@@ -16,23 +16,25 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import static springfox.documentation.builders.PathSelectors.regex;
 
+
 @Configuration
 @ EnableSwagger2
 public class SwaggerConfig extends WebMvcConfigurationSupport {
-    public Docket comentsApi() {
+    @Bean
+    public Docket Api() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("br.com.star.crudStar.demo"))
-                .paths(regex("/comentario.*"))
+                .paths(regex("/api/v1.0*"))
                 .build()
                 .apiInfo(metaData());
     }
     private ApiInfo metaData() {
         return new ApiInfoBuilder()
-                .title("API do Comentário")
-                .description("\" API da documentação do comentário\"")
+                .title("API dos Cruds")
+                .description("\" API da documentação\"")
                 .version("1.0.0")
-                .license("Saturn Group 1.0.0")
+                .license("Saturno Group 1.0.0")
                 .licenseUrl("https://github.com/rdrggrgld/Projeto-Star\"")
                 .contact(new Contact("Liliane Angelo", "https://github.com/rdrggrgld/Projeto-Star", "starcompany@star.com"))
                 .build();
@@ -45,4 +47,6 @@ public class SwaggerConfig extends WebMvcConfigurationSupport {
                 .addResourceLocations("classpath:/META-INF/resources/webjars/");
     }
 }
+
+
 

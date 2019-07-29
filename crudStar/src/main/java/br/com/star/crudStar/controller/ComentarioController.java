@@ -16,7 +16,8 @@ import java.util.Map;
 
 @Api(value = "API Rest Comentario")
 @RestController
-@RequestMapping("/api/v1")
+@CrossOrigin(origins = "http://localhost:8080")
+@RequestMapping("/api/v1/comentario")
 public class ComentarioController {
 
     @Autowired
