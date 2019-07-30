@@ -1,0 +1,21 @@
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 24px 0 rgba(0, 0, 0, 0.5);
+  margin-bottom: 100px;
+}#Footer {
+  border-top: 2px solid #435DB5;
+  background: radial-gradient(ellipse at bottom, #292D61 30%, #171941 80%);
+  padding: 0px;
+  
+}
+#bd-navbar{
+  border-bottom: 2px solid #435DB5;
+  background: radial-gradient(ellipse at bottom, #292D61 30%, #171941 80%);
+  
+}
+
+#more {
+  display: none;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
