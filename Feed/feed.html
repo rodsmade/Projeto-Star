@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/82299d9c78.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Feed do usuário</title>
+</head>
+
+<body>
+    <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar sticky-top">
+        <a class="navbar-brand mr-0 mr-md-2" href="#" aria-label="Feed">
+            <i class="far fa-star"></i>
+        </a>
+
+        <div class="navbar-nav-scroll">
+            <ul class="navbar-nav bd-navbar-nav flex-row">
+                <li class="nav-item">
+                    <a class="nav-link active" href="">Feed</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://nacoesunidas.org/pos2015/" target="_blank">Sobre os ODS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="" rel="noopener">Contato</a>
+                </li>
+            </ul>
+        </div>
+        <a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ml-md-auto" href=""><i
+                class="fas fa-sign-out-alt"></i></a>
+    </header>
+
+    <div class="nav-scroller bg-white shadow-sm">
+        <nav class="nav nav-underline d-flex justify-content-center">
+            <div class="teste d-flex">
+                <h1 class="fill">ODS</h1>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs mb-5 d-flex justify-content-around" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="amizades-tab" data-toggle="tab" href="#amizades" role="tab"
+                aria-controls="amizades" aria-selected="true">Amizades</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="meioamb-tab" data-toggle="tab" href="#meioamb" role="tab" aria-controls="meioamb"
+                aria-selected="false">Meio-Ambiente</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" id="esporte-tab" data-toggle="tab" href="#esporte" role="tab"
+                aria-controls="esporte" aria-selected="false">Esporte</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" id="esporte-tab" data-toggle="tab" href="#esporte" role="tab"
+                aria-controls="esporte" aria-selected="false">Cultura</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" id="esporte-tab" data-toggle="tab" href="#esporte" role="tab"
+                aria-controls="esporte" aria-selected="false">Mundo</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" id="esporte-tab" data-toggle="tab" href="#esporte" role="tab"
+                aria-controls="esporte" aria-selected="false">Educação</a>
+        </li>
+
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane active show" id="amizades" role="tabpanel" aria-labelledby="amizades-tab">
+            <div class="card-columns">
+
+                <!-- Módulo de criar post -->
+                <div class="card post-box">
+                    <form action="get">
+                        <textarea class="form-control" id="texto" placeholder="O que está acontecendo?"></textarea>
+                    </form>
+                    <div class="btn-group" role="group" aria-label="Basic example" style="width:100%;">
+                        <button type="button" class="btn btn-secondary"><i class="far fa-images"></i></button>
+                        <button type="button" class="btn btn-primary"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+                <!-- Fim do módulo de criar post -->
+
+                <!-- Módulo de post de usuário -->
+                <div class="card">
+                    <img src="images/creamery.jpg" class="card-img" alt="Foto ou vídeo do post">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">
+                            <div class="d-flex row">
+                                <div class="col-5 col-md-2 my-2">
+                                    <img src="images/profilepic.png" class="rounded-circle mx-auto d-block"
+                                        alt="Foto de perfil" width="40px">
+                                </div>
+                                <div class="col-auto align-self-center pt-3">
+                                    <h5 class="card-title">Cecília Delarue</h5>
+                                </div>
+                            </div>
+                        </h5>
+
+                        <p class="card-text">I love cheese, especially danish fontina camembert de normandie.
+                            Roquefort cheeseburger cottage cheese melted cheese cheese and wine fondue
+                            <span id="dots">...</span><span id="more">
+
+
+                                the big cheese gouda. Port-salut cream cheese cottage cheese who moved my cheese
+                                cheddar macaroni cheese fromage frais bocconcini. Mozzarella cheese slices hard
+                                cheese parmesan feta monterey jack cheese on toast cheesy feet. Cheese strings
+                                port-salut boursin queso.<br><br>
+
+                                Cauliflower cheese when the cheese comes out everybody's happy goat. The big cheese
+                                jarlsberg cheese and biscuits cut the cheese blue castello cheesy grin cheese
+                                triangles cream cheese. Feta cheesy grin airedale croque monsieur cheese on toast
+                                danish fontina fromage frais jarlsberg. Squirty cheese pepper jack cheese and wine
+                                cheese and biscuits roquefort blue castello feta roquefort. Cheesy feet say cheese
+                                chalk and cheese.<br><br>
+
+                                Chalk and cheese monterey jack gouda. Swiss cheddar caerphilly camembert de
+                                normandie cheese triangles melted cheese fromage frais the big cheese. Who moved my
+                                cheese who moved my cheese manchego melted cheese croque monsieur airedale swiss
+                                cheese slices. Cheesy feet brie fromage frais.
+                            </span><a href="" class="card-link" onclick="myFunction()" id="myBtn"> Ver mais</a>
+                        </p>
+
+                        <p class="card-text">
+                            <small><i class="fas fa-star" style="color: Mediumslateblue"></i>
+                                <a href="" class="card-link">19</a></small>
+                        </p>
+                    </div>
+                </div>
+                <!-- Fim do módulo de post de usuário -->
+
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is another card with title and supporting text below. This card has
+                            some additional content to make it slightly taller overall.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/cheese1.jpg" class="card-img-top" alt="cheese slices">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <div class="d-flex row">
+                                <div class="col-5 col-md-2 my-2">
+                                    <img src="images/profilepic1.jpg" class="rounded-circle mx-auto d-block"
+                                        alt="Foto de perfil" width="40px">
+                                </div>
+                                <div class="col-auto align-self-center pt-3">
+                                    <h5 class="card-title">Vittoria Borotto</h5>
+                                </div>
+                            </div>
+                        </h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+
+                        <p class="card-text">
+                            <small><i class="fas fa-star" style="color: Mediumslateblue"></i>
+                                <a href="" class="card-link">5</a></small>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <div class="d-flex row">
+                                <div class="col-5 col-md-2 my-2">
+                                    <img src="images/profilepic2.jpg" class="rounded-circle mx-auto d-block"
+                                        alt="Foto de perfil" width="40px">
+                                </div>
+                                <div class="col-auto align-self-center pt-3">
+                                    <h5 class="card-title">Liliane Martins</h5>
+                                </div>
+                            </div>
+                        </h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                        <p class="card-text">
+                            <small><i class="fas fa-star" style="color: Mediumslateblue"></i>
+                                <a href="" class="card-link">1</a></small>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/cheese2.jpg" class="card-img-top" alt="cheese wiht holes">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <div class="d-flex row">
+                                <div class="col-5 col-md-2 my-2">
+                                    <img src="images/profilepic4.jpg" class="rounded-circle mx-auto d-block"
+                                        alt="Foto de perfil" width="40px">
+                                </div>
+                                <div class="col-auto align-self-center pt-3">
+                                    <h5 class="card-title">Gilberto Moreira</h5>
+                                </div>
+                            </div>
+                        </h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                            content.</p>
+                        <p class="card-text">
+                            <small><i class="fas fa-star" style="color: Mediumslateblue"></i>
+                                <a href="" class="card-link">56</a></small>
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <div class="d-flex">
+                                <div class="col-5 col-md-2 my-2">
+                                    <img src="images/profilepic.png" class="rounded-circle mx-auto d-block"
+                                        alt="Foto de perfil" width="40px">
+                                </div>
+                                <div class="col-auto align-self-center pt-3">
+                                    <h5 class="card-title">Cecília Delarue</h5>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+                            <p class="card-text">
+                                <small><i class="fas fa-star" style="color: Mediumslateblue"></i>
+                                    <a href="" class="card-link">31</a></small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/cheese3.jpg" class="card-img-top" alt="cheesy pizza!">
+                </div>
+
+                <div class="card p-3 text-right">
+                    <blockquote class="blockquote mb-0">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                        <footer class="blockquote-footer">
+                            <small class="text-muted">
+                                Someone famous in <cite title="Source Title">Source Title</cite>
+                            </small>
+                        </footer>
+                    </blockquote>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is another card with title and supporting text below. This card has
+                            some additional content to make it slightly taller overall.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="meioamb" role="tabpanel" aria-labelledby="meioamb-tab">
+            <div class="card-columns">
+
+                <div class="card">
+                    <img src="images/cheese1.jpg" class="card-img-top" alt="cheese slices">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title that wraps to a new line</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+                <div class="card p-3">
+                    <blockquote class="blockquote mb-0 card-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                        <footer class="blockquote-footer">
+                            <small class="text-muted">
+                                Someone famous in <cite title="Source Title">Source Title</cite>
+                            </small>
+                        </footer>
+                    </blockquote>
+                </div>
+                <div class="card">
+                    <img src="images/cheese2.jpg" class="card-img-top" alt="cheese wiht holes">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                            content.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card bg-primary text-white text-center p-3">
+                    <blockquote class="blockquote mb-0">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+                        <footer class="blockquote-footer text-white">
+                            <small>
+                                Someone famous in <cite title="Source Title">Source Title</cite>
+                            </small>
+                        </footer>
+                    </blockquote>
+                </div>
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/cheese3.jpg" class="card-img-top" alt="cheesy pizza!">
+                </div>
+                <div class="card p-3 text-right">
+                    <blockquote class="blockquote mb-0">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                        <footer class="blockquote-footer">
+                            <small class="text-muted">
+                                Someone famous in <cite title="Source Title">Source Title</cite>
+                            </small>
+                        </footer>
+                    </blockquote>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is another card with title and supporting text below. This card has
+                            some additional content to make it slightly taller overall.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="esporte" role="tabpanel" aria-labelledby="esporte-tab">
+            <div class="card-columns">
+                <!-- Módulo de criar post -->
+                <div class="card post-box">
+                    <form action="get">
+                        <textarea class="form-control" id="texto" placeholder="O que está acontecendo?"></textarea>
+                    </form>
+                    <div class="btn-group" role="group" aria-label="Basic example" style="width:100%;">
+                        <button type="button" class="btn btn-secondary"><i class="far fa-images"></i></button>
+                        <button type="button" class="btn btn-primary"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+                <!-- Fim do módulo de comentário -->
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script>
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Ver mais";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Ver menos";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+</body>
+
+</html>
