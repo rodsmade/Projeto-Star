@@ -1,0 +1,12 @@
+
+Zsquid:S4684"@Replace this persistent entity with a simple POJO or DTO object.(Í•Ÿ€ýÿÿÿÿ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(—‰Â’ùÿÿÿÿ
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÚÌ¯¢
+osquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(âÛÐa
+Usquid:S4684"@Replace this persistent entity with a simple POJO or DTO object.(›ê˜ˆ
+gsquid:UselessImportCheck"ERemove this unused import 'br.com.star.crudStar.model.DadosPessoais'.(šÂ¡è
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(½“Ø­
+fsquid:UselessImportCheck"?Remove this unused import 'io.swagger.annotations.ApiResponse'.(ƒëöÕûÿÿÿÿ
+bsquid:UselessImportCheck"@Remove this unused import 'io.swagger.annotations.ApiResponses'.(žõ€£
+Vsquid:UselessImportCheck"/Remove this unused import 'java.util.Optional'.(¨˜ëÝüÿÿÿÿ

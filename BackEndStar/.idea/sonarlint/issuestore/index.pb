@@ -1,8 +1,6 @@
 
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-<
-crudStar.iml,0\e\0e0f52c96179d0a3098fdb004274ad0ec2f69730
 {
 Ksrc/main/java/br/com/star/crudStar/exception/ResourceNotFoundException.java,a\0\a030eaf920d847e603327c5d59ce040188d884bd
 t
