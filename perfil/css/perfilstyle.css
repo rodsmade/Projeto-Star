@@ -8,6 +8,14 @@ a{
     color: #211f25;
 }
 
+.amigx{
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: calc(.25rem - 1px);
+    width: 185px;
+    height: auto;
+}
+
 a:hover{
     color: rebeccapurple;
 }
@@ -34,7 +42,7 @@ a:hover{
     font-family: 'Poppins', sans-serif;
 }
 
-.card-img{
+.row .card-img{
     width: 155px;
     height: auto;
 }
