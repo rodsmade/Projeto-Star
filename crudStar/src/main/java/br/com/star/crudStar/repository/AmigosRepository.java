@@ -12,7 +12,7 @@ public interface AmigosRepository extends JpaRepository<Amigos, Long>{
 
     @Modifying
     @Transactional
-    @Query("UPDATE Amigos d.Usuario SET d. = :usuario WHERE d.id = :id")
+    @Query("UPDATE Amigos d.User SET d. = :usuario WHERE d.id = :id")
     void updateListaDeAmigosById(@Param("usuario") String usuario, @Param("id") Long id);
 
 }

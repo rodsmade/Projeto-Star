@@ -2,7 +2,6 @@ package br.com.star.crudStar.controller;
 
 import br.com.star.crudStar.exception.ResourceNotFoundException;
 import br.com.star.crudStar.model.Amigos;
-import br.com.star.crudStar.model.Usuario;
 import br.com.star.crudStar.repository.AmigosRepository;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
