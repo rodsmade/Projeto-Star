@@ -51,7 +51,7 @@ public class AuthenticationController {
       @Valid @RequestBody LoginRequest loginRequest) {
     Authentication authentication = authenticationManager.authenticate(
         new UsernamePasswordAuthenticationToken(
-            loginRequest.getUsernameOrEmail(),
+            loginRequest.getHandleOrEmail(),
             loginRequest.getPassword()
         )
     );
@@ -65,10 +65,10 @@ public class AuthenticationController {
   @PostMapping("/sign-up")
   public ResponseEntity<AuthenticationResponse> registerUser(
       @Valid @RequestBody SignUpRequest signUpRequest) {
-    if (userRepository.existsByUsername(signUpRequest.getUsername()) || userRepository
+    if (userRepository.existsByHandle(signUpRequest.getHandle()) || userRepository
         .existsByEmail(signUpRequest.getEmail())) {
       return ResponseEntity.badRequest()
-          .body(new AuthenticationResponse(false, "Username or E-mail Address already in use."));
+          .body(new AuthenticationResponse(false, "Handle or E-mail Address already in use."));
     }
 
     Role userRole = roleRepository.findByName(RoleName.ROLE_USER)
@@ -77,14 +77,14 @@ public class AuthenticationController {
     // Creating user's account
     User user = new User();
     user.setName(signUpRequest.getName());
-    user.setUsername(signUpRequest.getUsername());
+    user.setHandle(signUpRequest.getHandle());
     user.setEmail(signUpRequest.getEmail());
-    user.setPassword(passwordEncoder.encode(signUpRequest.getPassword()));
+    user.setSenha(passwordEncoder.encode(signUpRequest.getPassword()));
     user.setRoles(Collections.singleton(userRole));
 
     URI location = ServletUriComponentsBuilder
-        .fromCurrentContextPath().path("/users/{username}")
-        .buildAndExpand(userRepository.save(user).getUsername()).toUri();
+        .fromCurrentContextPath().path("/users/{Handle}")
+        .buildAndExpand(userRepository.save(user).getHandle()).toUri();
 
     return ResponseEntity.created(location)
         .body(new AuthenticationResponse(true, "User registered successfully."));
