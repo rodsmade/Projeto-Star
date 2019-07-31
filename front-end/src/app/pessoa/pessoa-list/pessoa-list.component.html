@@ -1,0 +1,48 @@
+<app-header></app-header>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div *ngIf="token.getRoleType() === 'user'">
+
+  <div class="col-md-6 user-container">
+    <h2 style="margin: auto">Lista de Pessoas</h2>
+    <button class="btn btn-success" style="width:100px" (click)="adicionarPessoa()">Adicionar Pessoa</button>
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th class="hidden">Id</th>
+        <th>Nome</th>
+        <th>Sobrenome</th>
+        <th>Cidade</th>
+        <th>Ações</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let pessoa of pessoas | async">
+        <td class="hidden">{{ pessoa.id }}</td>
+        <td>{{ pessoa.nome }}</td>
+        <td>{{ pessoa.sobrenome }}</td>
+        <td>{{ pessoa.cidade }}</td>
+        <td>
+          <button class="btn btn-danger" (click)="deletarPessoa(pessoa.id)">Remover</button>
+          <button class="btn btn-info" (click)="editarPessoa(pessoa.id)" style="margin-left: 20px;">Editar</button>
+          <button class="btn btn-info" (click)="visualizarPessoa(pessoa.id)" style="margin-left: 20px;">Visualizar</button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div *ngIf="!token.getRoleType()" class="nav-item">
+    <p style="font-size: 3rem;">
+      Para acessar o conteúdo, é necessário efetuar o login no sistema... <a class="nav-link" href="#" (click)="goToLogin()">Login</a>
+    </p>
+  </div>
+
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,126 @@
+<body class="index-page">
+  <div class="container">
+    <div class="row mainRow">
+      <h1>
+        <span class="mainTitle">Star✦</span>
+      </h1>
+      <div class="night">
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg fixed-top navbar-transparent " color-on-scroll="100">
+    <div class="container">
+      <div class="navbar-translate">
+        <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-bar bar1"></span>
+          <span class="navbar-toggler-bar bar2"></span>
+          <span class="navbar-toggler-bar bar3"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse justify-content-end" id="navigation">
+        <div class="navbar-collapse-header">
+          <div class="row">
+            <div class="col-6 collapse-brand">
+              <a>
+                STAR✦
+              </a>
+            </div>
+            <div class="col-6 collapse-close text-right">
+              <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <i class="tim-icons icon-simple-remove"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div id='center'>
+  <div class="wrapper">
+    <div class="page-header header-filter">
+      <div class="squares square1"></div>
+      <div class="squares square2"></div>
+      <div class="squares square3"></div>
+      <div class="squares square4"></div>
+      <div class="squares square5"></div>
+      <div class="squares square6"></div>
+      <div class="squares square7"></div>
+      <div class="container">
+        <div class="content-center brand">
+          <h4>Um novo conceito de Rede Social, Star presente</h4>
+
+          <form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
+
+
+            <div class="row">
+              <div class="col">
+                <label for="exampleInputEmail label0">Email</label>
+                <input type="email" class="form-control" placeholder="E-mail" [(ngModel)]="form.username" #username="ngModel"
+                required/>
+                <div *ngIf="f.submitted && username.invalid">
+                  <div *ngIf="username.errors.required"><span class="error">Por favor, preencha o campo usuário</span></div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col">
+                <label for="exampleInputSenha label0">Senha</label>
+                <input type="password" class="form-control" placeholder="Senha"[(ngModel)]="form.password" #password="ngModel" required minlength="8"/>
+                <div *ngIf="f.submitted && password.invalid">
+                  <div *ngIf="password.errors.required"><span class="error">Por favor, preencha o campo senha</span></div>
+                  <div *ngIf="password.errors.minlength"><span class="error">O campo senha deve ter mais que 8 caracteres</span></div>
+                </div>
+
+
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col">
+                <br>
+                <a href="/senha">Esqueci a Senha</a>
+              </div>
+              <div class="col">
+                <button class="btn btn-primary btn-neutral">Entrar</button>
+                <div *ngIf="f.submitted && isLoginFailed" class="alert alert-danger">
+                    <span class="error">Falha no login: {{errorMessage}}</span>
+                  </div>
+              </div>
+              <br>
+            </div>
+            <div class="row">
+              <div class="col-12 btncadastrar">
+                <a routerLink='/signup'>
+                  <button class="btn btn-primary btn-danger" id="btncadastrar">Cadastrar</button>
+                </a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>

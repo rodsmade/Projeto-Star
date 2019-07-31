@@ -1,0 +1,38 @@
+<app-header></app-header>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div *ngIf="token.getRoleType() === 'user'">
+
+  <h2>Detalhes da Pessoa</h2>
+  <hr/>
+  <div *ngIf="pessoa">
+    <div>
+      <label><strong>Nome: </strong></label> {{ pessoa.nome }}
+    </div>
+    <div>
+      <label><strong>Sobrenome: </strong></label> {{ pessoa.sobrenome }}
+    </div>
+    <div>
+      <label><strong>Cidade: </strong></label> {{ pessoa.cidade }}
+    </div>
+  </div>
+
+  <br>
+  <br>
+
+  <button (click)="goToList()" class="btn btn-primary">Voltar para a lista de Pessoas</button><br>
+
+</div>
+
+<div *ngIf="!token.getRoleType()" class="nav-item">
+  <p style="font-size: 3rem;">
+    Para acessar o conteúdo, é necessário efetuar o login no sistema... <a class="nav-link" href="#" (click)="goToLogin()">Login</a>
+  </p>
+</div>
+
+<app-footer></app-footer>

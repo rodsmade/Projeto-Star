@@ -1,0 +1,41 @@
+<app-header></app-header>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div *ngIf="token.getRoleType() === 'user'">
+
+  <div class="col-md-6">
+    <h2 class="text-center">Editar Pessoa</h2>
+    <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input type="text" formControlName="nome" placeholder="Nome" name="nome" class="form-control" id="nome">
+      </div>
+
+      <div class="form-group">
+        <label for="sobrenome">Sobrenome:</label>
+        <input formControlName="sobrenome" placeholder="Sobrenome" name="sobrenome" class="form-control" id="sobrenome">
+      </div>
+
+      <div class="form-group">
+        <label for="cidade">Cidade:</label>
+        <input formControlName="cidade" placeholder="Cidade" name="cidade" class="form-control" id="cidade">
+      </div>
+
+      <button class="btn btn-success">Atualizar</button>
+    </form>
+  </div>
+
+</div>
+
+<div *ngIf="!token.getRoleType()" class="nav-item">
+  <p style="font-size: 3rem;">
+    Para acessar o conteúdo, é necessário efetuar o login no sistema... <a class="nav-link" href="#" (click)="goToLogin()">Login</a>
+  </p>
+</div>
+
+<app-footer></app-footer>

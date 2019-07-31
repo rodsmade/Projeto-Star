@@ -1,0 +1,121 @@
+<body>
+<div class="container pt-5" style="padding-bottom: 110px;">
+  <div class="row justify-content-between">
+    <div class="col-12 col-sm-6 d-flex align-items-center">
+
+      <div class="night">
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+      </div>
+
+      <h1 class="welcome pb-5">Bem-Vindx!</h1>
+
+
+    </div>
+    <div class="col-auto col-sm-auto">
+      <div class="card p-3 float-right">
+
+        <form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
+          <div class="form-row align-items-center" class="form-group">
+            <div class="col-auto">
+              <label for="inlineFormInputGroup" class="titulo">Nome de usuário</label>
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text titulo">@</div>
+                </div>
+                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="usuário" name="name" [(ngModel)]="form.name"
+                       #name="ngModel"
+                       required/>
+              </div>
+            </div>
+          </div>
+
+
+
+          <label for="inputPassword" class="mt-3 titulo">Senha</label>
+          <div class="form-row align-items-space-around">
+
+            <div class="col-12 col-md-6">
+
+              <input type="text" class="form-control" id="inputPassword" placeholder="Senha" name="password"
+                     [(ngModel)]="form.password"
+                     #password="ngModel"
+                     required minlength="8"/><small id="passwordHelpInline" class="text-muted">
+              Entre 8 e 20 caracteres.
+            </small>
+            </div>
+            <div class="col-12 col-md-6">
+              <label class="sr-only" for="inlineFormInput">Confirmar a senha</label>
+              <input type="text" class="form-control mb-2" placeholder="Confirmar senha" required>
+            </div>
+          </div>
+
+          <div class="form-group mt-3">
+            <label for="email" class="titulo">Email</label>
+            <input type="email" class="form-control" id="email" [(ngModel)]="form.email"  name="email" #email="ngModel" required email/>
+            <div *ngIf="f.submitted && email.invalid">
+              <div class="error" *ngIf="email.errors.required">O campo e-mail é obrigatório</div>
+              <div class="error" *ngIf="email.errors.email">Por favor, preencha com um e-mail válido</div>
+            </div>
+            <small id="emailHelp1" class="form-text text-muted">Não compartilharemos seu email com ninguém!</small>
+          </div>
+          <div class="form-row align-items-space-around">
+            <div class="col-12 col-md-6">
+              <label for="inputNome" class="titulo">Nome</label>
+              <input type="text" class="form-control mb-2" id="inputNome" placeholder="Nome" name="username"
+                     [(ngModel)]="form.username"
+                     #username="ngModel"
+                     required/>>
+            </div>
+            <div class="col-12 col-md-6">
+              <label class="sr-only" for="inlineFormInput">Sobrenome</label>
+              <input type="text" class="form-control mb-2" placeholder="Sobrenome" id="inlineFormInput">
+            </div>
+
+          </div>
+
+          <div class="form-group mt-3">
+            <label for="inputNascimento" class="titulo">Data de Nascimento</label>
+            <input type="date" class="form-control" id="inputNascimento" placeholder="AAAA-MM-DD"  required>
+            <small id="emailHelp" class="form-text text-muted">Insira separado por hífens na sequência Dia-Mês-Ano.</small>
+          </div>
+
+
+          <div class="form-group">
+            <div class="form-check text-left">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox">
+                <p id="aceito">Eu aceito os <a href="" data-toggle="modal" data-target="#exampleModalLong">termos e condições</a>.</p>
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+          <button type="submit" class="btn btn-primary float-none">Cadastrar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
