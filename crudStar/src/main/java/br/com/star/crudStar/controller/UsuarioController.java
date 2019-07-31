@@ -13,7 +13,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 @RestController
@@ -75,25 +77,16 @@ public class UsuarioController {
         return ResponseEntity.ok(updatedUsuario);
     }
 
-//    @DeleteMapping("/usuario/{id}")
-//    public Map<String, Boolean> deleteEmployee(@PathVariable(value = "id") Long usuarioId)
-//            throws ResourceNotFoundException {
-//        Usuario usuario = usuarioRepository.findById(usuarioId)
-//                .orElseThrow(() -> new ResourceNotFoundException("Employee not found for this id :: " + usuarioId));
-//
-//        usuarioRepository.delete(usuario);
-//        Map<String, Boolean> response = new HashMap<>();
-//        response.put("deleted", Boolean.TRUE);
-//        return response;
-//    }
-    //------------------------------------------------------------------------------------------------------------------
-    // Método DELETE
-
-
     @DeleteMapping("/usuario/{id}")
     @ApiOperation("Deleta usuário por id")
-    public void delete(@PathVariable Long id) {   //tudo que era integer a gnt começou a usar Long
-        // "DELETE FROM clioente WHERE id = ..."
-        usuarioRepository.deleteById(id);
+    public Map<String, Boolean> deleteEmployee(@PathVariable(value = "id") Long usuarioId)
+            throws ResourceNotFoundException {
+        Usuario usuario = usuarioRepository.findById(usuarioId)
+                .orElseThrow(() -> new ResourceNotFoundException("Employee not found for this id :: " + usuarioId));
+
+        usuarioRepository.delete(usuario);
+        Map<String, Boolean> response = new HashMap<>();
+        response.put("deleted", Boolean.TRUE);
+        return response;
     }
 }

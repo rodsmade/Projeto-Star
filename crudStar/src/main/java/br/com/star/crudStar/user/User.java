@@ -17,7 +17,7 @@ import java.util.Set;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "user", uniqueConstraints = {
+@Table(name = "usuario", uniqueConstraints = {
     @UniqueConstraint(columnNames = {
         "username"
     }),
@@ -52,8 +52,9 @@ public class User {
   @Size(max = 100)
   private String senha;
 
-//  private Date nascimento;
-//  private Integer qtdAmigos;
+  private Date nascimento;
+// É uma FOREIGN KEY| resolver depois
+  //  private Integer qtdAmigos;
 
   @ManyToMany(fetch = FetchType.LAZY)
   @JoinTable(name = "user_role", // TODO - user_roles renomeada para user_role
