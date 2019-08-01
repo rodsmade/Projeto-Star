@@ -17,7 +17,7 @@ import java.util.Set;
 @Getter
 @Setter
 @Entity
-@Table(name = "usuario", uniqueConstraints = {
+@Table(name = "user", uniqueConstraints = {
     @UniqueConstraint(columnNames = {
         "handle"
     }),
@@ -35,7 +35,7 @@ public class User {
   @Size(max = 50)
   private String name;
 
-  @NotBlank
+
   @Size(max = 50)
   private String sobrenome;
 
@@ -70,5 +70,18 @@ public class User {
       joinColumns = @JoinColumn(name = "user_id"),
       inverseJoinColumns = @JoinColumn(name = "role_id"))
   private Set<Role> roles = new HashSet<>();
+
+  public User() {
+    this.name = name;
+    this.sobrenome = sobrenome;
+    this.username = username;
+    this.email = email;
+    this.senha = senha;
+    this.nascimento = nascimento;
+    this.dadosPessoais = dadosPessoais;
+    this.roles = roles;
+  }
+
+
 
 }
