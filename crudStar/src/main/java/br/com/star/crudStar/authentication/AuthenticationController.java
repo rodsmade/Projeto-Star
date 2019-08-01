@@ -51,7 +51,7 @@ public class AuthenticationController {
       @Valid @RequestBody LoginRequest loginRequest) {
     Authentication authentication = authenticationManager.authenticate(
         new UsernamePasswordAuthenticationToken(
-            loginRequest.getHandleOrEmail(),
+            loginRequest.getUsernameOrEmail(),
             loginRequest.getPassword()
         )
     );
@@ -65,10 +65,10 @@ public class AuthenticationController {
   @PostMapping("/sign-up")
   public ResponseEntity<AuthenticationResponse> registerUser(
       @Valid @RequestBody SignUpRequest signUpRequest) {
-    if (userRepository.existsByHandle(signUpRequest.getHandle()) || userRepository
+    if (userRepository.existsByUsername(signUpRequest.getUsername()) || userRepository
         .existsByEmail(signUpRequest.getEmail())) {
       return ResponseEntity.badRequest()
-          .body(new AuthenticationResponse(false, "Handle or E-mail Address already in use."));
+          .body(new AuthenticationResponse(false, "Username or E-mail Address already in use."));
     }
 
     Role userRole = roleRepository.findByName(RoleName.ROLE_USER)
@@ -77,14 +77,14 @@ public class AuthenticationController {
     // Creating user's account
     User user = new User();
     user.setName(signUpRequest.getName());
-    user.setHandle(signUpRequest.getHandle());
+    user.setUsername(signUpRequest.getUsername());
     user.setEmail(signUpRequest.getEmail());
     user.setSenha(passwordEncoder.encode(signUpRequest.getPassword()));
     user.setRoles(Collections.singleton(userRole));
 
     URI location = ServletUriComponentsBuilder
-        .fromCurrentContextPath().path("/users/{Handle}")
-        .buildAndExpand(userRepository.save(user).getHandle()).toUri();
+        .fromCurrentContextPath().path("/users/{username}")
+        .buildAndExpand(userRepository.save(user).getUsername()).toUri();
 
     return ResponseEntity.created(location)
         .body(new AuthenticationResponse(true, "User registered successfully."));

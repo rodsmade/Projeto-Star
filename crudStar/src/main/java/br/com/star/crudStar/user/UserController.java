@@ -29,10 +29,10 @@ public class UserController {
     return new UserSummary(currentUser.getId(), currentUser.getUsername(), currentUser.getName());
   }
 
-  @PostMapping("/user/check-handle-availability")
-  public UserIdentityAvailability checkHandleAvailability(
-      @RequestParam String handle) {
-    Boolean isAvailable = !userRepository.existsByHandle(handle);
+  @PostMapping("/user/check-username-availability")
+  public UserIdentityAvailability checkUsernameAvailability(
+      @RequestParam String username) {
+    Boolean isAvailable = !userRepository.existsByUsername(username);
     return new UserIdentityAvailability(isAvailable);
   }
 
@@ -44,11 +44,11 @@ public class UserController {
   }
 
   @PostMapping("/users")
-  public UserProfile getUserProfile(@RequestParam String handle) {
-    User user = userRepository.findByHandle(handle)
+  public UserProfile getUserProfile(@RequestParam String username) {
+    User user = userRepository.findByUsername(username)
         .orElseThrow(() -> new ResourceNotFoundException("User not found."));
 
-    return new UserProfile(user.getId(), user.getHandle(), user.getName());
+    return new UserProfile(user.getId(), user.getUsername(), user.getName());
   }
 
   // ______________________________________________________________________
@@ -85,7 +85,7 @@ public class UserController {
     User user = userRepository.findById(userId)
             .orElseThrow(() -> new ResourceNotFoundException(NOT_FOUND + userId));
 
-    user.setHandle(userDetails.getHandle());
+    user.setUsername(userDetails.getUsername());
     user.setEmail(userDetails.getEmail());
     user.setName(userDetails.getName());
     user.setSobrenome(userDetails.getSobrenome());

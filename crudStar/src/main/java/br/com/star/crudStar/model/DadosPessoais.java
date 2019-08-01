@@ -1,17 +1,16 @@
 package br.com.star.crudStar.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import br.com.star.crudStar.user.User;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.*;
 
 import javax.persistence.*;
 import javax.validation.constraints.Size;
 import java.math.BigInteger;
 
-@Data
+@Getter
+@Setter
 @Entity
-@AllArgsConstructor
-@NoArgsConstructor
 @Table(name = "dados_pessoais")
 
 public class DadosPessoais {
@@ -21,7 +20,7 @@ public class DadosPessoais {
     @Column(name="id_dados_pessoais")
     private Long id;
 
-    @Column(name = "url_foto_perfil")
+    @Column(name = "url_foto_perfil", unique = true)
     @Size(max=100)
     private String url_foto_perfil;
 

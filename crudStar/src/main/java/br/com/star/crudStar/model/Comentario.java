@@ -1,15 +1,16 @@
 package br.com.star.crudStar.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import br.com.star.crudStar.user.User;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.*;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
+@Getter
+@Setter
 @Entity
 @Table(name = "comentario")
 public class Comentario {
@@ -19,15 +20,15 @@ public class Comentario {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idComentario;
 
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @JoinColumn(name = "id_post", nullable = false)
+    @OnDelete(action = OnDeleteAction.CASCADE)
+    @JsonIgnore
+    private Post post;
+
 
     @NotNull
     private String comentario;
 
-    @Override
-    public String toString() {
-        return "Comentario{" +
-                "idComentario=" + idComentario +
-                ", comentario='" + comentario + '\'' +
-                '}';
-    }
+
 }

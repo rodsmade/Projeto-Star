@@ -1,12 +1,19 @@
 package br.com.star.crudStar.model;
 
+import br.com.star.crudStar.user.User;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import lombok.ToString;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
 
 import javax.persistence.*;
+import java.util.Set;
 
-@ToString
-@Data
+@Getter
+@Setter
 @Entity
 @Table(name = "Post")
 public class Post {
@@ -15,6 +22,13 @@ public class Post {
     @Column(name = "id_post")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @JoinColumn(name = "id", nullable = false)
+    @OnDelete(action = OnDeleteAction.CASCADE)
+    @JsonIgnore
+    private User user;
+
 
     //conferir se as classes dos atributos estão corretas
     //principalmente para Foto e Video

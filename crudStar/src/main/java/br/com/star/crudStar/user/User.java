@@ -1,8 +1,9 @@
 package br.com.star.crudStar.user;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import br.com.star.crudStar.model.DadosPessoais;
+import br.com.star.crudStar.model.Post;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.*;
 import br.com.star.crudStar.role.Role;
 
 import javax.persistence.*;
@@ -13,13 +14,12 @@ import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
+@Getter
+@Setter
 @Entity
 @Table(name = "usuario", uniqueConstraints = {
     @UniqueConstraint(columnNames = {
-        "username"
+        "handle"
     }),
     @UniqueConstraint(columnNames = {
         "email"
@@ -39,9 +39,10 @@ public class User {
   @Size(max = 50)
   private String sobrenome;
 
+  @Column(name = "handle")
   @NotBlank
   @Size(max = 15)
-  private String handle;
+  private String username;
 
   @Email
   @NotBlank
@@ -51,10 +52,18 @@ public class User {
   @NotBlank
   @Size(max = 100)
   private String senha;
-
   private Date nascimento;
+
 // É uma FOREIGN KEY| resolver depois
   //  private Integer qtdAmigos;
+
+
+  @JsonIgnore
+  @OneToOne(cascade =  CascadeType.ALL)
+  @JoinColumn(name = "id_dados_pessoais")
+  private DadosPessoais dadosPessoais;
+
+
 
   @ManyToMany(fetch = FetchType.LAZY)
   @JoinTable(name = "user_role", // TODO - user_roles renomeada para user_role
