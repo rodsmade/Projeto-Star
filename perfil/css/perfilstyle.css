@@ -9,10 +9,20 @@ a{
 }
 
 .amigx{
+    width: 13em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.amigx:nth-child(5n+5){
+    margin-right: 0px;
+}
+
+.amigx img{
     margin-right: 5px;
     margin-bottom: 5px;
     border-radius: calc(.25rem - 1px);
-    width: 185px;
+    width: 100%;
     height: auto;
 }
 
