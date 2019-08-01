@@ -1,9 +1,36 @@
 body{
     font-family: 'Poppins',sans-serif;
+}
+
+.bg-star{
     background-image: url(../imagens/dots.png);
     background-color: #171941;
     background-repeat: repeat;
-    background-size: contain;
+    background-size: cover;
+}
+
+a{
+    color: #e63e3b;
+}
+
+.bg-primary, .btn-primary, .nav-pills .nav-link.active{
+    background-color: #e63e3b;
+}
+
+.btn-primary{
+    border-color: #e63e3b;
+}
+
+.nav-tabs .nav-link.active{
+    border-color: #e63e3b;
+}
+
+textarea.form-control{
+    border: 1px solid rgba(230, 62, 59,.6);
+}
+
+.card{
+    border: 1px solid rgba(230, 62, 59,.6);
 }
 
 .post-box{
@@ -19,13 +46,21 @@ body{
 }
 
 .bd-navbar {
-    min-height: 3rem;
-    background-color: #171941;
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
+    min-height: 4rem;
 }
 
 #more{
     display: none;
+}
+
+#footer{
+    border-top: 2px solid #435DB5;
+    padding: 0px;
+    height: 4em;
+}
+
+#myTab{
+    z-index: 4;
 }
 
 .btn-bd-download {
@@ -48,29 +83,20 @@ body{
     border-color: #e14eca;
 }
 
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(226, 82, 202,0.75);
+}
+
 .tab-content{
     padding: 0 50px;
 }
 
 .nav-tabs{
-    background:white;
     position:sticky;
-    top:3rem;
-}
-
-#myTab{
-    z-index: 4;
+    top:4rem;
 }
 
 .painel{
     height: 26em;
     padding: 50px 0;
-}
-
-.ods1-bg{
-    background: #e63e3b;
-}
-
-.ods1-color{
-    color: #e63e3b;
 }
