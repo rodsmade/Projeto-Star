@@ -1,7 +1,9 @@
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: #211f25;
-    /* background-color:#484058; */
+    background-image: url(../imagens/dots.png);
+    background-color: #171941;
+    background-repeat: repeat;
+    background-size: contain;
 }
 
 a{
@@ -58,6 +60,7 @@ a:hover{
 }
 
 .bd-navbar{
+    height: 3em;
     border-bottom: 2px solid #435DB5;
     background: radial-gradient(ellipse at bottom, #292D61 30%, #171941 80%);
     
@@ -89,12 +92,12 @@ a:hover{
 }
 
 .fa-star{
-    color: #ffe484;
+    color: #e14eca;
 }
 
 .fa-star:hover{
     font-weight: 600;
-    color: #ffe484;
+    color: e14eca;
 }
 
 .bd-navbar {
@@ -104,14 +107,14 @@ a:hover{
 
 .btn-bd-download {
     font-weight: 600;
-    color: #ffe484;
-    border-color: #ffe484;
+    color: #e14eca;
+    border-color: #e14eca;
 }
 
 .btn-bd-download:active, .btn-bd-download:hover {
     color: #2a2730;
-    background-color: #ffe484;
-    border-color: #ffe484;
+    background-color: #e14eca;
+    border-color: #e14eca;
 }
 
 .nav-tabs{

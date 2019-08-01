@@ -1,4 +1,5 @@
 body{
+    font-family: 'Poppins',sans-serif;
     background-image: url(../imagens/dots.png);
     background-color: #171941;
     background-repeat: repeat;
@@ -13,9 +14,13 @@ body{
     padding: 0px;
 }
 
+.navbar{
+    padding: 0 1rem;
+}
+
 .bd-navbar {
-    min-height: 4rem;
-    background-color: #563d7c;
+    min-height: 3rem;
+    background-color: #171941;
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
 }
 
@@ -25,22 +30,22 @@ body{
 
 .btn-bd-download {
     font-weight: 600;
-    color: #ffe484;
-    border-color: #ffe484;
+    color: #e14eca;
+    border-color: #e14eca;
 }
 .fa-star{
-    color: #ffe484;
+    color: #e14eca;
 }
 
 .fa-star:hover{
     font-weight: 600;
-    color: #ffe484;
+    color: #e14eca;
 }
 
 .btn-bd-download:active, .btn-bd-download:hover {
     color: #2a2730;
-    background-color: #ffe484;
-    border-color: #ffe484;
+    background-color: #e14eca;
+    border-color: #e14eca;
 }
 
 .tab-content{
@@ -50,24 +55,22 @@ body{
 .nav-tabs{
     background:white;
     position:sticky;
-    top:4rem;
+    top:3rem;
 }
 
 #myTab{
     z-index: 4;
 }
 
-.teste{
-    height: 18em;
+.painel{
+    height: 26em;
+    padding: 50px 0;
 }
 
-.fill {
-    align-items: center;
-    justify-content: space-around;
-    font-size: 15em;
+.ods1-bg{
+    background: #e63e3b;
+}
 
-   background-image: url(https://2.bp.blogspot.com/-pKFE-5ysj68/TkjG9DvLB4I/AAAAAAAAEoM/rDKiHkvbC8o/s1600/Abstract_Wallpaper_8.jpg);
-   -webkit-background-clip: text;  
-   background-clip: text;
-   color: transparent;
+.ods1-color{
+    color: #e63e3b;
 }
