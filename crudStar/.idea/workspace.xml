@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c29b688-36a9-45b5-962c-99c106958d89" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/br/com/star/crudStar/dadosPessoais/DadosPessoaisControllerIntegrationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/br/com/star/crudStar/dadosPessoais/DadosPessoaisMock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/br/com/star/crudStar/post/PostControllerIntegrationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/br/com/star/crudStar/post/PostMock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/star/crudStar/comentario/ComentarioControllerIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/star/crudStar/comentario/ComentarioControllerIntegrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/star/crudStar/comentario/ComentarioMock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/star/crudStar/comentario/ComentarioMock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/star/crudStar/dadosPessoais/DadosPessoaisMock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/star/crudStar/dadosPessoais/DadosPessoaisMock.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -112,7 +106,7 @@
       <option name="presentableId" value="Default" />
       <updated>1564676639932</updated>
       <workItem from="1564676642007" duration="2990000" />
-      <workItem from="1564680249062" duration="10339000" />
+      <workItem from="1564680249062" duration="10710000" />
     </task>
     <servers />
   </component>

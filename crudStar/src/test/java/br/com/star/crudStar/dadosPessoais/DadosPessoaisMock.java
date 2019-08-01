@@ -12,7 +12,6 @@ public class DadosPessoaisMock {
     public static DadosPessoais getDadosPessoaisMock() {
         DadosPessoais dadosPessoais = new DadosPessoais();
         Faker faker = new Faker(new Locale("pt-BR"));
-        dadosPessoais.setCartaoCredito(faker.number().randomNumber();
         dadosPessoais.setCidade(faker.lorem().sentence());
         dadosPessoais.setGenero(faker.lorem().sentence());
         dadosPessoais.setUrl_foto_perfil(faker.lorem().sentence());

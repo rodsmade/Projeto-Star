@@ -1,6 +1,5 @@
 use star;
 
-SELECT * FROM usuario;
 
 SELECT * FROM role;
 
