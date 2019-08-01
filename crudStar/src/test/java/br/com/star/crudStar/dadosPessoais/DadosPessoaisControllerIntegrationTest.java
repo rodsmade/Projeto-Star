@@ -1,7 +1,9 @@
-package br.com.star.crudStar.comentario;
+package br.com.star.crudStar.dadosPessoais;
 
 import br.com.star.crudStar.CrudStarApplication;
+import br.com.star.crudStar.comentario.ComentarioMock;
 import br.com.star.crudStar.model.Comentario;
+import br.com.star.crudStar.model.DadosPessoais;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -19,8 +21,7 @@ import static org.junit.Assert.assertNotNull;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = CrudStarApplication.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-public class ComentarioControllerIntegrationTest {
-
+public class DadosPessoaisControllerIntegrationTest {
     @Autowired
     private TestRestTemplate testRestTemplate;
 
@@ -28,30 +29,30 @@ public class ComentarioControllerIntegrationTest {
     private int port;
 
     private String getRootUrl() {
-        return "http://localhost:" + port + "/api/v1/comentario/";
+        return "http://localhost:" + port + "/api/v1/dados-pessoais/";
     }
 
     private String token;
 
-   @Before
-   public void init() {
+    @Before
+    public void init() {
         this.token = "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNTY0Njg1MjE3LCJleHAiOjE1NjQ2ODYxMTd9.Tfjo_fz32ElEwp5HGPrESCWTmtKGwg5amwQCH8r1bJKVVj-rkW4P_2SHV6-hfl3h4bd4Y8zSLAGj5mFOGiJgAA";
     }
 
     @Test
-    public void testaCriacaoDeUmNovoComentario() {
+    public void testaCriacaoDeUmNovoDadoPessoal() {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
         headers.setAccept(Collections.singletonList(MediaType.APPLICATION_JSON));
         headers.add("Authorization", "Bearer " + this.token);
 
-        HttpEntity<Comentario> entity = new HttpEntity<>(ComentarioMock.getComentarioMock(), headers);
+        HttpEntity<DadosPessoais> entity = new HttpEntity<>(DadosPessoaisMock.getDadosPessoaisMock(), headers);
 
-        ResponseEntity<Comentario> responseEntity = testRestTemplate.exchange(
+        ResponseEntity<DadosPessoais> responseEntity = testRestTemplate.exchange(
                 getRootUrl(),
                 HttpMethod.POST,
                 entity,
-                Comentario.class
+                DadosPessoais.class
         );
 
         assertNotNull(responseEntity);
@@ -59,7 +60,7 @@ public class ComentarioControllerIntegrationTest {
     }
 
     @Test
-    public void testaConsultaDeTodosOsComentarios() {
+    public void testaConsultaDeTodosOsDadosPessoais() {
         HttpHeaders headers = new HttpHeaders();
         headers.add("Authorization", "Bearer " + this.token);
         HttpEntity<String> entity = new HttpEntity<>(null, headers);
@@ -75,42 +76,40 @@ public class ComentarioControllerIntegrationTest {
     }
 
     @Test
-    public void testaConsultaComentarioPorId() {
+    public void testaConsultaDadosPessoaisPorId() {
         HttpHeaders headers = new HttpHeaders();
         headers.add("Authorization", "Bearer " + this.token);
         HttpEntity<String> entity = new HttpEntity<>(null, headers);
 
-        ResponseEntity<Comentario> response = testRestTemplate.exchange(
+        ResponseEntity<DadosPessoais> response = testRestTemplate.exchange(
                 getRootUrl() + "1",
                 HttpMethod.GET,
                 entity,
-                Comentario.class);
+                DadosPessoais.class);
 
         assertNotNull(response.getBody());
         assertEquals(200, response.getStatusCodeValue());
     }
 
     @Test
-    public void testaAtualizacaoDeUmComentario() {
+    public void testaAtualizacaoDeUmDadoPessoal() {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
         headers.setAccept(Collections.singletonList(MediaType.APPLICATION_JSON));
         headers.add("Authorization", "Bearer " + this.token);
 
-        HttpEntity<Comentario> entity = new HttpEntity<>(ComentarioMock.getComentarioMock(), headers);
+        HttpEntity<DadosPessoais> entity = new HttpEntity<>(DadosPessoaisMock.getDadosPessoaisMock(), headers);
 
-        ResponseEntity<Comentario> responseEntity = testRestTemplate.exchange(
+        ResponseEntity<DadosPessoais> responseEntity = testRestTemplate.exchange(
                 getRootUrl() + "1",
                 HttpMethod.PUT,
                 entity,
-                Comentario.class
+                DadosPessoais.class
         );
 
         assertNotNull(responseEntity);
         assertEquals(200, responseEntity.getStatusCodeValue());
     }
-
-
 
 
 
