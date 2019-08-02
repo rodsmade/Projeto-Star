@@ -37,10 +37,6 @@ textarea.form-control{
     border: 0px;
 }
 
-.list-group-item{
-    padding: 0px;
-}
-
 .navbar{
     padding: 0 1rem;
 }
@@ -68,19 +64,20 @@ textarea.form-control{
     color: #e14eca;
     border-color: #e14eca;
 }
-.fa-star{
-    color: #e14eca;
-}
-
-.fa-star:hover{
-    font-weight: 600;
-    color: #e14eca;
-}
 
 .btn-bd-download:active, .btn-bd-download:hover {
     color: #2a2730;
     background-color: #e14eca;
     border-color: #e14eca;
+}
+
+.fa-star{
+  color: #e14eca;
+}
+
+.fa-star:hover{
+  font-weight: 600;
+  color: #e14eca;
 }
 
 .navbar-dark .navbar-nav .nav-link {
