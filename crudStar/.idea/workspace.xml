@@ -2,43 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c089657d-658a-482e-854b-2556317d9be5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/br/com/star/crudStar/comentario/ComentarioControllerIntegrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/br/com/star/crudStar/comentario/ComentarioMock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/star/crudStar/controller/DadosPessoaisController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/star/crudStar/controller/DadosPessoaisController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/star/crudStar/model/Comentario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/star/crudStar/model/Comentario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/star/crudStar/security/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/star/crudStar/security/SecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/star/crudStar/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/star/crudStar/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/star/crudStar/comentario/ComentarioControllerIntegrationTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/star/crudStar/comentario/ComentarioMock.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/star/crudStar/dadosPessoais/DadosPessoaisControllerIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/star/crudStar/dadosPessoais/DadosPessoaisControllerIntegrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/star/crudStar/post/PostControllerIntegrationTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/star/crudStar/post/PostMock.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/authentication/AuthenticationResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/authentication/AuthenticationResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/controller/ComentarioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/controller/ComentarioController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/controller/DadosPessoaisController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/controller/DadosPessoaisController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/controller/PostController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/controller/PostController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/model/Comentario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/model/Comentario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/role/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/role/Role.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/security/LoginRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/security/LoginRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/security/SecurityConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/security/SecurityConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/security/SignUpRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/security/SignUpRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/security/jwt/JwtAuthenticationFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/security/jwt/JwtAuthenticationFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/security/jwt/JwtAuthenticationResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/security/jwt/JwtAuthenticationResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/security/jwt/JwtTokenProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/security/jwt/JwtTokenProvider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/user/CustomUserDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/user/CustomUserDetailsService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/user/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/user/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/user/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/user/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/user/UserIdentityAvailability.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/user/UserIdentityAvailability.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/user/UserPrincipal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/user/UserPrincipal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/user/UserProfile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/user/UserProfile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/user/UserSummary.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/user/UserSummary.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/br/com/star/crudStar/comentario/ComentarioControllerIntegrationTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/br/com/star/crudStar/comentario/ComentarioMock.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -72,14 +39,53 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/br/com/star/crudStar/dadosPessoais/DadosPessoaisControllerIntegrationTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="909">
-              <caret line="89" column="23" lean-forward="true" selection-start-line="89" selection-start-column="23" selection-end-line="89" selection-end-column="23" />
+            <state relative-caret-position="390">
+              <caret line="94" column="27" selection-start-line="23" selection-start-column="3" selection-end-line="100" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/br/com/star/crudStar/comentario/ComentarioControllerIntegrationTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-323">
+              <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/star/crudStar/controller/ComentarioController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-166">
+              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/br/com/star/crudStar/comentario/ComentarioMock.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/br/com/star/crudStar/dadosPessoais/DadosPessoaisMock.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="14" column="41" selection-start-line="11" selection-start-column="4" selection-end-line="18" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -101,15 +107,16 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/br/com/star/crudStar/user/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/star/crudStar/model/Comentario.java" />
-        <option value="$PROJECT_DIR$/src/test/java/br/com/star/crudStar/user/UserMock.java" />
-        <option value="$PROJECT_DIR$/src/test/java/br/com/star/crudStar/user/UserControllerIntegrationTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/star/crudStar/security/SecurityConfiguration.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/star/crudStar/controller/DadosPessoaisController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/test/java/br/com/star/crudStar/comentario/ComentarioControllerIntegrationTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/br/com/star/crudStar/post/PostControllerIntegrationTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/br/com/star/crudStar/dadosPessoais/DadosPessoaisControllerIntegrationTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/br/com/star/crudStar/user/UserControllerIntegrationTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/br/com/star/crudStar/user/UserMock.java" />
+        <option value="$PROJECT_DIR$/src/test/java/br/com/star/crudStar/comentario/ComentarioMock.java" />
+        <option value="$PROJECT_DIR$/src/test/java/br/com/star/crudStar/comentario/ComentarioControllerIntegrationTest.java" />
       </list>
     </option>
   </component>
@@ -173,7 +180,31 @@
               <item name="crudStar" type="b2602c69:ProjectViewProjectNode" />
               <item name="crudStar" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="crudStar" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crudStar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crudStar" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crudStar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crudStar" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crudStar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crudStar" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="crudStar" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -209,7 +240,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.CrudStarApplication">
+  <component name="RunManager" selected="JUnit.ComentarioControllerIntegrationTest">
+    <configuration name="ComentarioControllerIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="crudStar" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.star.crudStar.comentario.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.star.crudStar.comentario" />
+      <option name="MAIN_CLASS_NAME" value="br.com.star.crudStar.comentario.ComentarioControllerIntegrationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DadosPessoaisControllerIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="crudStar" />
       <extension name="coverage">
@@ -237,21 +283,6 @@
       <option name="MAIN_CLASS_NAME" value="br.com.star.crudStar.dadosPessoais.DadosPessoaisControllerIntegrationTest" />
       <option name="METHOD_NAME" value="testaConsultaDadosPessoaisPorId" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PostControllerIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="crudStar" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.star.crudStar.post.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="br.com.star.crudStar.post" />
-      <option name="MAIN_CLASS_NAME" value="br.com.star.crudStar.post.PostControllerIntegrationTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -297,11 +328,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ComentarioControllerIntegrationTest" />
         <item itemvalue="JUnit.DadosPessoaisControllerIntegrationTest" />
         <item itemvalue="JUnit.DadosPessoaisControllerIntegrationTest.testaConsultaDadosPessoaisPorId" />
         <item itemvalue="JUnit.PostControllerIntegrationTest.testaCriacaoDeUmNovoPost" />
         <item itemvalue="JUnit.PostControllerIntegrationTest.testaAtualizacaoDeUmPost" />
-        <item itemvalue="JUnit.PostControllerIntegrationTest" />
       </list>
     </recent_temporary>
   </component>
@@ -322,14 +353,11 @@
       <workItem from="1564766109181" duration="1569000" />
       <workItem from="1564767725567" duration="324000" />
       <workItem from="1564768231019" duration="1741000" />
-      <workItem from="1564770023421" duration="355000" />
+      <workItem from="1564770023421" duration="1774000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PostControllerIntegrationTest - 2019.08.02 at 14h 36m 32s.xml">
-      <configuration name="PostControllerIntegrationTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="PostControllerIntegrationTest_testaConsultaDeTodosOsPosts - 2019.08.02 at 14h 38m 00s.xml">
       <configuration name="PostControllerIntegrationTest.testaConsultaDeTodosOsPosts" configurationId="JUnit" />
     </history-entry>
@@ -357,9 +385,12 @@
     <history-entry file="DadosPessoaisControllerIntegrationTest - 2019.08.02 at 15h 22m 18s.xml">
       <configuration name="DadosPessoaisControllerIntegrationTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ComentarioControllerIntegrationTest - 2019.08.02 at 15h 48m 49s.xml">
+      <configuration name="ComentarioControllerIntegrationTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10627000" />
+    <option name="totallyTimeSpent" value="12046000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -374,7 +405,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.060556464" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.5220949" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -513,7 +544,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/br/com/star/crudStar/user/UserMock.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/br/com/star/crudStar/user/UserControllerIntegrationTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/star/crudStar/security/jwt/JwtAuthenticationEntryPoint.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -583,7 +613,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/br/com/star/crudStar/comentario/ComentarioControllerIntegrationTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/star/crudStar/model/Post.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -634,13 +663,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/br/com/star/crudStar/dadosPessoais/DadosPessoaisControllerIntegrationTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/br/com/star/crudStar/user/UserMock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="909">
-          <caret line="89" column="23" lean-forward="true" selection-start-line="89" selection-start-column="23" selection-end-line="89" selection-end-column="23" />
+        <state relative-caret-position="187">
+          <caret line="11" column="58" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/br/com/star/crudStar/user/UserControllerIntegrationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="112" selection-start-line="8" selection-start-column="112" selection-end-line="8" selection-end-column="112" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/br/com/star/crudStar/dadosPessoais/DadosPessoaisControllerIntegrationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="94" column="27" selection-start-line="23" selection-start-column="3" selection-end-line="100" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/br/com/star/crudStar/dadosPessoais/DadosPessoaisMock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="41" selection-start-line="11" selection-start-column="4" selection-end-line="18" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/br/com/star/crudStar/comentario/ComentarioMock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/br/com/star/crudStar/comentario/ComentarioControllerIntegrationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-323">
+          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/star/crudStar/controller/ComentarioController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-166">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
         </state>
       </provider>
     </entry>

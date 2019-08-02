@@ -31,3 +31,11 @@ z
 Jsrc/main/java/br/com/star/crudStar/controller/DadosPessoaisController.java,9\5\95048126afe1e86e115bdd90a011f3c6b9fb7e05
 q
 Asrc/main/java/br/com/star/crudStar/controller/PostController.java,9\5\95276beed4e349f887afd0b9c60d7a2ace4055b2
+w
+Gsrc/test/java/br/com/star/crudStar/dadosPessoais/DadosPessoaisMock.java,1\4\14e7424c5ff6db2f8e69854c1c38c27963e8106d
+q
+Asrc/test/java/br/com/star/crudStar/comentario/ComentarioMock.java,f\5\f5a21ada17c58f6f19084bf9ed658ef3fe11e016
+†
+Vsrc/test/java/br/com/star/crudStar/comentario/ComentarioControllerIntegrationTest.java,1\c\1c3215782df0e665a86f200fda8c60137ea2c720
+w
+Gsrc/main/java/br/com/star/crudStar/controller/ComentarioController.java,b\2\b26580437cdfcd26665bc351ab4b8e32b5c5bebf
