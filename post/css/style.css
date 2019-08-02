@@ -1,12 +1,87 @@
-.card{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 24px 0 rgba(0, 0, 0, 0.5);
-  margin-bottom: 100px;
-}#Footer {
-  border-top: 2px solid #435DB5;
-  background: radial-gradient(ellipse at bottom, #292D61 30%, #171941 80%);
-  padding: 0px;
-  
+body{
+  font-family: 'Poppins', sans-serif;
 }
+
+.bg-star{
+  background-image: url(../img/dots.png);
+  background-color: #171941;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+a{
+  color: #e63e3b;
+}
+
+.bg-primary, .btn-primary, .nav-pills .nav-link.active{
+  background-color: #e63e3b;
+}
+
+.btn-primary{
+  border-color: #e63e3b;
+}
+
+textarea.form-control{
+  border: 1px solid rgba(230, 62, 59,.6);
+}
+
+.card{
+  border: 1px solid rgba(230, 62, 59,.6);
+}
+
+.card-shadow{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 24px 0 rgba(0, 0, 0, 0.5);
+}
+
+.fa-star{
+  color: #e14eca;
+}
+
+.fa-star:hover{
+  font-weight: 600;
+  color: #e14eca;
+}
+
+.bd-navbar {
+  min-height: 4rem;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
+}
+
+.navbar{
+  padding: 0 1rem;
+}
+
+.btn-bd-download {
+  font-weight: 600;
+  color: #e14eca;
+  border-color: #e14eca;
+}
+
+.btn-bd-download:active, .btn-bd-download:hover {
+  color: #2a2730;
+  background-color: #e14eca;
+  border-color: #e14eca;
+}
+
+.fa-star{
+  color: #e14eca;
+}
+
+.fa-star:hover{
+  font-weight: 600;
+  color: #e14eca;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(226, 82, 202,0.75);
+}
+
+#footer{
+  border-top: 2px solid #435DB5;
+  padding: 0px;
+  height: 4em;
+}
+
 #bd-navbar{
   border-bottom: 2px solid #435DB5;
   background: radial-gradient(ellipse at bottom, #292D61 30%, #171941 80%);
@@ -16,6 +91,8 @@
 #more {
   display: none;
 }
-body{
-  font-family: 'Poppins', sans-serif;
+
+#myBtn{
+  color: #e63e3b;
+  text-decoration: underline;
 }

@@ -21,16 +21,16 @@ a{
     border-color: #e63e3b;
 }
 
-.nav-tabs .nav-link.active{
-    border-color: white;
-}
-
 textarea.form-control{
     border: 1px solid rgba(230, 62, 59,.6);
 }
 
 .card{
     border: 1px solid rgba(230, 62, 59,.6);
+}
+
+.nav-tabs .nav-link.active{
+    border-color: white;
 }
 
 .post-box{
@@ -128,7 +128,7 @@ a:hover{
 
 .fa-star:hover{
     font-weight: 600;
-    color: e14eca;
+    color: #e14eca;
 }
 
 .bd-navbar {
