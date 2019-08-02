@@ -26,6 +26,12 @@ public class Comentario {
     @JsonIgnore
     private Post post;
 
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @JoinColumn(name = "id", nullable = false)
+    @OnDelete(action = OnDeleteAction.CASCADE)
+    @JsonIgnore
+    private User user;
+
 
     @NotNull
     private String comentario;

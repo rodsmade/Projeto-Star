@@ -3,13 +3,14 @@ package br.com.star.crudStar.controller;
 import br.com.star.crudStar.exception.ResourceNotFoundException;
 import br.com.star.crudStar.model.DadosPessoais;
 import br.com.star.crudStar.repository.DadosPessoaisRepository;
-import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.Optional;
 
 
 @RestController
@@ -49,8 +50,8 @@ public class DadosPessoaisController {
     // READ
     @GetMapping("/dados-pessoais/{id}")
     @ApiOperation("Busca dados pessoais")
-    public DadosPessoais buscarDadosPessoaisPorId(@PathVariable Long id){
-        return dadosPessoaisRepository.findById(id).get();
+    public Optional<DadosPessoais> buscarDadosPessoaisPorId(@PathVariable Long id){
+        return dadosPessoaisRepository.findById(id);
     }
 
     // UPDATE

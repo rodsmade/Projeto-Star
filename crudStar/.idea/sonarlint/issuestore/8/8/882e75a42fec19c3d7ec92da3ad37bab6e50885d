@@ -1,0 +1,13 @@
+
+squid:S4165T"cRemove this useless assignment; "roles" already holds the assigned value along all execution paths.(ª¢…áşÿÿÿÿ
+Nsquid:S1135G"2Complete the task associated to this TODO comment.(…òŠúÿÿÿÿ
+squid:S4165P"cRemove this useless assignment; "email" already holds the assigned value along all execution paths.(ÍùÅ‡øÿÿÿÿ
+‚squid:S4165O"fRemove this useless assignment; "username" already holds the assigned value along all execution paths.(ğ„ªıÿÿÿÿ
+~squid:S4165M"bRemove this useless assignment; "name" already holds the assigned value along all execution paths.(É´“ıÿÿÿÿ
+bsquid:CommentedOutCodeLine:"<This block of commented-out lines of code should be removed.(„ï‚Ğ
+`squid:UselessImportCheck"<Remove this unused import 'br.com.star.crudStar.model.Post'.(ù»Ÿ
+ƒsquid:S4165N"gRemove this useless assignment; "sobrenome" already holds the assigned value along all execution paths.(®ğèáùÿÿÿÿ
+wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¦–Ì«úÿÿÿÿ
+zsquid:S4165Q"cRemove this useless assignment; "senha" already holds the assigned value along all execution paths.(Óü¬
+‡squid:S4165S"kRemove this useless assignment; "dadosPessoais" already holds the assigned value along all execution paths.(À½Åïıÿÿÿÿ
+„squid:S4165R"hRemove this useless assignment; "nascimento" already holds the assigned value along all execution paths.(ÏûÖ°üÿÿÿÿ

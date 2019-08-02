@@ -1,8 +1,7 @@
 package br.com.star.crudStar.dadosPessoais;
 
 import br.com.star.crudStar.CrudStarApplication;
-import br.com.star.crudStar.comentario.ComentarioMock;
-import br.com.star.crudStar.model.Comentario;
+
 import br.com.star.crudStar.model.DadosPessoais;
 import org.junit.Before;
 import org.junit.Test;
@@ -36,7 +35,7 @@ public class DadosPessoaisControllerIntegrationTest {
 
     @Before
     public void init() {
-        this.token = "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNTY0Njg1MjE3LCJleHAiOjE1NjQ2ODYxMTd9.Tfjo_fz32ElEwp5HGPrESCWTmtKGwg5amwQCH8r1bJKVVj-rkW4P_2SHV6-hfl3h4bd4Y8zSLAGj5mFOGiJgAA";
+        this.token = "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNTY0NzY4NTI3LCJleHAiOjE1NjQ4NTQ5Mjd9.L-u1pAhdJmU3jq2_FRxm4_LhuanznrFl1kqP8fLYEJ1w45rKaQEUNld_4-xP0k-ikvlgxQ0-EYQCP3TVDcwvFQ";
     }
 
     @Test
@@ -59,21 +58,6 @@ public class DadosPessoaisControllerIntegrationTest {
         assertEquals(201, responseEntity.getStatusCodeValue());
     }
 
-    @Test
-    public void testaConsultaDeTodosOsDadosPessoais() {
-        HttpHeaders headers = new HttpHeaders();
-        headers.add("Authorization", "Bearer " + this.token);
-        HttpEntity<String> entity = new HttpEntity<>(null, headers);
-
-        ResponseEntity<String> response = testRestTemplate.exchange(
-                getRootUrl(),
-                HttpMethod.GET,
-                entity,
-                String.class);
-
-        assertNotNull(response.getBody());
-        assertEquals(200, response.getStatusCodeValue());
-    }
 
     @Test
     public void testaConsultaDadosPessoaisPorId() {
@@ -102,7 +86,7 @@ public class DadosPessoaisControllerIntegrationTest {
 
         ResponseEntity<DadosPessoais> responseEntity = testRestTemplate.exchange(
                 getRootUrl() + "1",
-                HttpMethod.PUT,
+                HttpMethod.PATCH,
                 entity,
                 DadosPessoais.class
         );

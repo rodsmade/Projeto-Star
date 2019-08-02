@@ -58,6 +58,8 @@ public class User {
   //  private Integer qtdAmigos;
 
 
+
+
   @JsonIgnore
   @OneToOne(cascade =  CascadeType.ALL)
   @JoinColumn(name = "id_dados_pessoais")

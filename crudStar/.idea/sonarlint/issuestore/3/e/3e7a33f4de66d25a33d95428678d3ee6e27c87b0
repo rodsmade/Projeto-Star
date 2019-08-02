@@ -1,0 +1,7 @@
+
+ksquid:S00116("SRename this field "url_foto" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸°Áµ
+Ssquid:UselessImportCheck"*Remove this unused import 'java.util.Set'.(ö²„¤şÿÿÿÿ
+lsquid:S00116&"TRename this field "url_video" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ßÍöö
+rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‚²Èô
+Qsquid:UselessImportCheck"(Remove this unused import 'lombok.Data'.(÷í«ÿÿÿÿÿ
+Psquid:UselessImportCheck",Remove this unused import 'lombok.ToString'.(¹ÂÄÓ
