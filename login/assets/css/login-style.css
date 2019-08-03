@@ -1,0 +1,53 @@
+body{
+    font-family: 'Poppins',sans-serif;
+    display: block;
+    background-size: contain;
+    background-color: #171941;
+    background-image: url(../img/dots.png);
+    overflow: auto;
+        /* margin: initial;
+    font-size: initial;
+    font-weight: initial;
+    line-height: initial;
+    color: initial;
+    text-align: initial;
+    background: initial;
+    height: initial;
+    overflow: initial;
+    justify-content: initial;
+    align-items: initial; */
+}
+
+.bg-star{
+    background-image: url(../img/dots.png);
+    background-color: #171941;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.bd-navbar {
+    min-height: 4rem;
+}
+
+.navbar{
+    padding: 0 1rem;
+}
+
+.night{
+    top: -5vh;
+    left: -26vw;
+    width: initial;
+    height: initial;
+}
+
+.mainTitle {
+    font-size: 120px;
+    margin-left: 12vw;
+    margin-top: 30vh;
+}
+
+#footer{
+    border-top: 2px solid #435DB5;
+    padding: 0px;
+    height: 4em;
+}

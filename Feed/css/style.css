@@ -9,12 +9,12 @@ body{
     background-size: cover;
 }
 
-a{
-    color: #e63e3b;
-}
-
 a:hover{
   color:white;
+}
+
+a:active{
+  color: white;
 }
 
 .bg-primary, .btn-primary, .nav-pills .nav-link.active{
@@ -30,7 +30,7 @@ a:hover{
   border-color: #e63e3b;
 }
 
-.nav-tabs .nav-link.active{
+.nav-tabs .nav-link:active{
     border-color: #e63e3b;
 }
 
@@ -102,9 +102,9 @@ textarea.form-control{
     top:4rem;
 }
 
-.painel{
+.painel-ods{
     height: 26em;
-    padding: 50px 0;
+    padding: 0px;
 }
 
 /* teste de animação */

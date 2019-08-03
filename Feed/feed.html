@@ -21,23 +21,23 @@
         <div class="navbar-nav-scroll">
             <ul class="navbar-nav bd-navbar-nav flex-row">
                 <li class="nav-item">
-                    <a class="nav-link active" href="">Feed</a>
+                    <a class="nav-link active notOds" href="">Feed</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://nacoesunidas.org/pos2015/" target="_blank">Sobre os ODS</a>
+                    <a class="nav-link notOds" href="https://nacoesunidas.org/pos2015/" target="_blank">Sobre os ODS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="" rel="noopener">Contato</a>
+                    <a class="nav-link notOds" href="" rel="noopener">Contato</a>
                 </li>
             </ul>
         </div>
-        <a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ml-md-auto" href=""><i
+        <a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ml-md-auto notOds" href=""><i
                 class="fas fa-sign-out-alt"></i></a>
     </header>
 
-    <nav class="painel nav-scroller bg-white shadow-sm">
+    <nav class="painel-ods nav-scroller bg-white shadow-sm">
         <div class="d-flex flex-column justify-content-center align-items-center">
-            <img width="300px" height="auto"
+            <img id="img-ods" width="300px" height="auto"
                 src="imagens/S SDG Icons Inverted Icons/S_INVERTED SDG goals_icons-individual-RGB-01.png">
             <button type="button" class="btn btn-primary">Ajudar hoje!</button>
         </div>
@@ -54,19 +54,19 @@
                 aria-selected="false">Meio-Ambiente</a>
         </li>
         <li class="nav-pills">
-            <a class="nav-link disabled" id="esporte-tab" data-toggle="tab" href="#esporte" role="tab"
+            <a class="nav-link disabled notOds" id="esporte-tab" data-toggle="tab" href="#esporte" role="tab"
                 aria-controls="esporte" aria-selected="false">Esporte</a>
         </li>
         <li class="nav-pills">
-            <a class="nav-link disabled" id="esporte-tab" data-toggle="tab" href="#esporte" role="tab"
+            <a class="nav-link disabled notOds" id="esporte-tab" data-toggle="tab" href="#esporte" role="tab"
                 aria-controls="esporte" aria-selected="false">Cultura</a>
         </li>
         <li class="nav-pills">
-            <a class="nav-link disabled" id="esporte-tab" data-toggle="tab" href="#esporte" role="tab"
+            <a class="nav-link disabled notOds" id="esporte-tab" data-toggle="tab" href="#esporte" role="tab"
                 aria-controls="esporte" aria-selected="false">Mundo</a>
         </li>
         <li class="nav-pills">
-            <a class="nav-link disabled" id="esporte-tab" data-toggle="tab" href="#esporte" role="tab"
+            <a class="nav-link disabled notOds" id="esporte-tab" data-toggle="tab" href="#esporte" role="tab"
                 aria-controls="esporte" aria-selected="false">Educação</a>
         </li>
 
@@ -109,7 +109,8 @@
                         </h5>
 
                         <p class="card-text">I love cheese, especially danish fontina camembert de normandie.
-                            Roquefort cheeseburger cottage cheese melted cheese cheese and wine fondue the big cheese gouda.
+                            Roquefort cheeseburger cottage cheese melted cheese cheese and wine fondue the big cheese
+                            gouda.
                         </p>
 
                         <p class="card-text">
@@ -376,6 +377,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="js/nosso-script-teste.js"></script>
 
 </body>
 
