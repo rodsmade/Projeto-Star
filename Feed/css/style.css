@@ -13,12 +13,21 @@ a{
     color: #e63e3b;
 }
 
+a:hover{
+  color:white;
+}
+
 .bg-primary, .btn-primary, .nav-pills .nav-link.active{
     background-color: #e63e3b;
 }
 
 .btn-primary{
     border-color: #e63e3b;
+}
+
+.btn-primary:hover {
+  background-color: #e63e3b;
+  border-color: #e63e3b;
 }
 
 .nav-tabs .nav-link.active{
