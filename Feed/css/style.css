@@ -59,7 +59,7 @@ textarea.form-control{
 }
 
 #footer{
-    border-top: 2px solid #435DB5;
+    border-top: 2px solid rgb(67, 93, 181);
     padding: 0px;
     height: 4em;
 }

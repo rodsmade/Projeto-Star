@@ -1,6 +1,6 @@
-var
+let
     img = document.getElementById('img-ods'),
-      txtColor = document.querySelectorAll("a:not(.notOds), a:hover"),
+    txtColor = document.querySelectorAll("a:not(.notOds), a:hover"),
     bgColor = document.querySelectorAll(".bg-primary, .btn-primary, .nav-pills .nav-link.active, .btn-primary:hover, .painel-ods"),
     brdrColor = document.querySelectorAll(".btn-primary, .btn-primary:hover, .nav-tabs .nav-link.active"),
     brdrTransp = document.querySelectorAll('.card, textarea.form-control');
@@ -33,6 +33,7 @@ function start(counter){
 
       // aqui eu passo tudo aquilo q precisa de um counter (1~17) 
       console.log(counter);
+
       img.src = "imagens/paineis-ods/ods"+(counter+1)+".png";
         txtColor.forEach((a) => {
             a.style.color = ods[counter];
