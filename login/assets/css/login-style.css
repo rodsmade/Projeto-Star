@@ -19,6 +19,16 @@ body{
     align-items: initial; */
 }
 
+hr{
+    border-top: 1px solid rgba(0255, 0255, 255, 0.1);
+    width: 90%;
+}
+
+.lead{
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
 .bg-star{
     background-image: url(../img/dots.png);
     background-color: #171941;

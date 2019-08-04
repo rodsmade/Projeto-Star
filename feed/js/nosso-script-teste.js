@@ -2,7 +2,7 @@ let
     img = document.getElementById('img-ods'),
     txtColor = document.querySelectorAll("a:not(.notOds), a:hover"),
     bgColor = document.querySelectorAll(".bg-primary, .btn-primary, .nav-pills .nav-link.active, .btn-primary:hover, .painel-ods"),
-    brdrColor = document.querySelectorAll(".btn-primary, .btn-primary:hover, .nav-tabs .nav-link.active"),
+    brdrColor = document.querySelectorAll(".btn-primary:not(.notOds), .btn-primary:hover, .nav-tabs .nav-link.active"),
     brdrTransp = document.querySelectorAll('.card, textarea.form-control');
 
 var ods = [
@@ -55,7 +55,7 @@ function start(counter){
           counter = 0;
       }
 	  start(counter);
-    }, 4000);
+    }, 10000);
   
 }
 

@@ -9,6 +9,11 @@ body{
     background-size: cover;
 }
 
+#img-ods{
+  width:100%;
+  height:auto;
+}
+
 a:hover{
   color:white;
 }
@@ -105,6 +110,7 @@ textarea.form-control{
 .painel-ods{
     height: 26em;
     padding: 0px;
+    background-color: #e52e3d;
 }
 
 /* teste de animação */
