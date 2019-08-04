@@ -7,40 +7,56 @@ var
 
 var ods = [
     "#e52e3d",
-    "#dba639",
-    "#4d9e38",
-    "#c6272e",
-    "#e5352d",
-    "#5ebee3",
-    "#5ebee3",
-    "#a21e42",
-    "#e86629",
-    "#dd2c67",
-    "#ed9c20",
-    "#c18b30",
-    "#3f7e45",
-    "#4b97da",
-    "#5bc02b",
-    "#33689d",
-    "#21486a"
+    "#e5b735",
+    "#4c9f38",
+    "#c5192d",
+    "#ff3a21",
+    "#26bde2",
+    "#fcc30b",
+    "#a21942",
+    "#fd6925",
+    "#dd1367",
+    "#fd9d24",
+    "#c9992d",
+    "#3f7e44",
+    "#0a97d9",
+    "#56c02b",
+    "#00689d",
+    "#19486a"
 ];
 
 
-for(i=1; i<=17;i++){
-    setTimeout(function () {
-        img.src = "imagens/ods"+i+".png";
+// aqui eu declaro o q é a função
+function start(counter){
+  
+    setTimeout(function(){
+
+      // aqui eu passo tudo aquilo q precisa de um counter (1~17) 
+      console.log(counter);
+      img.src = "imagens/paineis-ods/ods"+(counter+1)+".png";
         txtColor.forEach((a) => {
-            a.style.color = ods[i];
+            a.style.color = ods[counter];
         });
         bgColor.forEach((b) => {
-            b.style.backgroundColor = ods[i];
+            b.style.backgroundColor = ods[counter];
         });
         brdrColor.forEach((bc) => {
-            bc.style.borderColor = ods[i];
+            bc.style.borderColor = ods[counter];
         })
         brdrTransp.forEach((bt) => {
-            bt.style.borderColor = ods[i];
+            bt.style.borderColor = ods[counter];
         })
+      // ...
+      
+      // aqui o counter atualiza e garante que fique em loop 
+      counter++;
+      if(counter>16){
+          counter = 0;
+      }
+	  start(counter);
     }, 4000);
+  
 }
 
+// aqui eu chamo
+start(0);
