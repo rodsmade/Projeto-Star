@@ -1,0 +1,488 @@
+<app-header></app-header>
+<body>
+<div class="container">
+
+  <div class="cover">
+    <div class="foto-cover">
+      <img src="../../assets/img/capa.png">
+    </div>
+
+    <div class="profilepic position-relative border-2 rounded-circle">
+      <img class="border border-white rounded-circle position-absolute" src="https://api.adorable.io/avatars/108/2.png"
+           height="110px" width="auto">
+    </div>
+  </div>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs bg-star d-flex justify-content-center mb-3 py-2" id="myTab" role="tablist">
+    <li class="nav-pills">
+      <a class="nav-link active px-3" id="feed-tab" data-toggle="tab" href="#feed-user" role="tab"
+         aria-controls="linha do tempo" aria-selected="true">Linha do tempo</a>
+    </li>
+    <li class="nav-pills">
+      <a class="nav-link px-3" id="sobre-tab" data-toggle="tab" href="#sobre" role="tab"
+         aria-controls="aba de sobre" aria-selected="false">Sobre</a>
+    </li>
+    <li class="nav-pills">
+      <a class="nav-link px-3" id="amigxs-tab" data-toggle="tab" href="#amigxs" role="tab"
+         aria-controls="amigæ" aria-selected="false">Amigxs</a>
+    </li>
+    <li class="nav-pills">
+      <a class="nav-link px-3" id="causas-tab" data-toggle="tab" href="#causas" role="tab"
+         aria-controls="causas" aria-selected="false">Causas</a>
+    </li>
+  </ul>
+
+  <!-- Barra de progresso -->
+  <div class="progress mb-3" id="progress-bar" onclick="expandeProgressBar()" style="height:10px;">
+    <div class="progress-bar ods1" role="progressbar" style="width: 52%;" aria-valuenow="52" aria-valuemin="0"
+         aria-valuemax="100">
+      <div class="contribuicao justify-content-center">ODS1(52%)</div>
+    </div>
+    <div class="progress-bar ods6" role="progressbar" style="width: 36%" aria-valuenow="36" aria-valuemin="0"
+         aria-valuemax="100">
+      <div class="contribuicao justify-content-center">ODS2(36%)</div>
+    </div>
+    <div class="progress-bar ods7" role="progressbar" style="width: 12%" aria-valuenow="12" aria-valuemin="0"
+         aria-valuemax="100">
+      <div class="contribuicao justify-content-center">ODS1(12%)</div>
+    </div>
+  </div>
+  <!-- Fim da barra de progresso -->
+
+
+
+
+  <!-- Tab panes -->
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane active show" id="feed-user" role="tabpanel" aria-labelledby="aba de linha do tempo">
+      <div class="card-columns">
+
+        <!-- Módulo de post de usuário -->
+        <div class="card">
+          <img src="../../assets/img/creamery.jpg" class="card-img" alt="Foto ou vídeo do post">
+            <h5 class="card-title">
+              <div class="d-flex row">
+                <div class="col-5 col-md-2 my-2">
+                  <img src="https://api.adorable.io/avatars/108/2.png" class="rounded-circle mx-auto d-block"
+                       alt="Foto de perfil" width="40px">
+                </div>
+                <div class="col-auto align-self-center pt-3">
+                  <h5 class="card-title">@Eu</h5>
+                </div>
+              </div>
+            </h5>
+
+            <p class="card-text">I love cheese, especially danish fontina camembert de normandie.
+              Roquefort cheeseburger cottage cheese melted cheese cheese and wine fondue
+              <span id="dots">...</span><span id="more">
+
+
+                                    the big cheese gouda. Port-salut cream cheese cottage cheese who moved my cheese
+                                    cheddar macaroni cheese fromage frais bocconcini. Mozzarella cheese slices hard
+                                    cheese parmesan feta monterey jack cheese on toast cheesy feet. Cheese strings
+                                    port-salut boursin queso.<br><br>
+
+                                    Cauliflower cheese when the cheese comes out everybody's happy goat. The big cheese
+                                    jarlsberg cheese and biscuits cut the cheese blue castello cheesy grin cheese
+                                    triangles cream cheese. Feta cheesy grin airedale croque monsieur cheese on toast
+                                    danish fontina fromage frais jarlsberg. Squirty cheese pepper jack cheese and wine
+                                    cheese and biscuits roquefort blue castello feta roquefort. Cheesy feet say cheese
+                                    chalk and cheese.<br><br>
+
+                                    Chalk and cheese monterey jack gouda. Swiss cheddar caerphilly camembert de
+                                    normandie cheese triangles melted cheese fromage frais the big cheese. Who moved my
+                                    cheese who moved my cheese manchego melted cheese croque monsieur airedale swiss
+                                    cheese slices. Cheesy feet brie fromage frais.
+                                </span><a href="" class="card-link" onclick="myFunction()" id="myBtn"> Ver mais</a>
+            </p>
+
+            <p class="card-text">
+              <small><i class="fas fa-star" style="color: Mediumslateblue"></i>
+                <a href="" class="card-link">19</a></small>
+            </p>
+        </div>
+        <!-- Fim do módulo de post de usuário -->
+
+
+
+
+
+        <div class="card">
+          <img src="../../assets/img/cheese1.jpg" class="card-img-top" alt="cheese slices">
+            <h5 class="card-title">
+              <div class="d-flex row">
+                <div class="col-5 col-md-2 my-2">
+                  <img src="https://api.adorable.io/avatars/108/2.png" class="rounded-circle mx-auto d-block"
+                       alt="Foto de perfil" width="40px">
+                </div>
+                <div class="col-auto align-self-center pt-3">
+                  <h5 class="card-title">@Eu</h5>
+                </div>
+              </div>
+            </h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+              to
+              additional content. This content is a little bit longer.</p>
+
+            <p class="card-text">
+              <small><i class="fas fa-star" style="color: Mediumslateblue"></i>
+                <a href="" class="card-link">5</a></small>
+            </p>
+
+        </div>
+
+        <div class="card">
+            <h5 class="card-title">
+              <div class="d-flex row">
+                <div class="col-5 col-md-2 my-2">
+                  <img src="https://api.adorable.io/avatars/108/2.png" class="rounded-circle mx-auto d-block"
+                       alt="Foto de perfil" width="40px">
+                </div>
+                <div class="col-auto align-self-center pt-3">
+                  <h5 class="card-title">@Eu</h5>
+                </div>
+              </div>
+            </h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <p class="card-text">
+              <small><i class="fas fa-star" style="color: Mediumslateblue"></i>
+                <a href="" class="card-link">1</a></small>
+            </p>
+          </div>
+
+        <div class="card">
+          <img src="../../assets/img/cheese2.jpg" class="card-img-top" alt="cheese wiht holes">
+            <h5 class="card-title">
+              <div class="d-flex row">
+                <div class="col-5 col-md-2 my-2">
+                  <img src="https://api.adorable.io/avatars/108/2.png" class="rounded-circle mx-auto d-block"
+                       alt="Foto de perfil" width="40px">
+                </div>
+                <div class="col-auto align-self-center pt-3">
+                  <h5 class="card-title">@Eu</h5>
+                </div>
+              </div>
+            </h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional
+              content.</p>
+            <p class="card-text">
+              <small><i class="fas fa-star" style="color: Mediumslateblue"></i>
+                <a href="" class="card-link">56</a></small>
+            </p>
+
+        </div>
+
+
+          <div class="card">
+            <div class="card-title">
+              <div class="d-flex">
+                <div class="col-5 col-md-2 my-2">
+                  <img src="https://api.adorable.io/avatars/108/2.png" class="rounded-circle mx-auto d-block"
+                       alt="Foto de perfil" width="40px">
+                </div>
+                <div class="col-auto align-self-center pt-3">
+                  <h5 class="card-title">@Eu</h5>
+                </div>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+              <p class="card-text">
+                <small><i class="fas fa-star" style="color: Mediumslateblue"></i>
+                  <a href="" class="card-link">31</a></small>
+              </p>
+            </div>
+          </div>
+
+
+        <div class="card">
+          <img src="../../assets/img/cheese3.jpg" class="card-img-top" alt="cheesy pizza!">
+
+        </div>
+
+
+
+
+
+
+
+      </div>
+    </div>
+
+    <div class="tab-pane fade" id="sobre" role="tabpanel" aria-labelledby="aba de sobre">
+      <div class="jumbotron">
+        <h1 class="display-4">Sobre</h1>
+        <p class="lead"><app-user-details></app-user-details></p>
+
+      </div>
+    </div>
+
+    <div class="tab-pane fade" id="causas" role="tabpanel" aria-labelledby="aba de causas">
+      <div class="jumbotron">
+        <h1 class="display-4">Causas</h1>
+        <img src="../../assets/img/geralods.png" style="width: 700px; height: 150px; justify-content: center; margin-left: 180px;">
+        <p>Momento de ação global para as pessoas e o planeta. Uma oportunidade histórica e sem precedentes para reunir os países e a população global e decidir sobre novos caminhos, melhorando a vida das pessoas em todos os lugares. Essas decisões determinarão o curso global de ação para acabar com a pobreza, promover a prosperidade e o bem-estar para todos, proteger o meio ambiente e enfrentar as mudanças climáticas.</p>
+        <hr> Gostaria de contribuir? Utilize suas STARS para engajar nessas causas!<hr>
+
+
+          <div class="card cmargin" style="background-color: #e5243b; color: white;">
+              <div class="card-body">
+                <div class="input-group mb-3">
+                  <input type="checkbox"><h5>ODS 1: Erradicação da pobreza </h5>
+                </div>
+                Acabar com a pobreza em todas as suas formas, em todos os lugares
+              </div>
+          </div>
+
+          <div class="card cmargin" style="background-color: #e5b735; color: white;">
+            <div class="card-body">
+            <div class="input-group mb-3">
+              <input type="checkbox"><h5>ODS 2: Fome zero e agricultura sustentável </h5>
+            </div>
+              Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável
+            </div>
+          </div>
+
+          <div class="card cmargin" style="background-color: #4c9f38; color: white;">
+            <div class="card-body">
+            <div class="input-group mb-3">
+              <input type="checkbox"><h5>ODS 3: Saúde e bem-estar </h5>
+            </div>
+              Assegurar uma vida saudável e promover o bem-estar para todas e todos, em todas as idades
+            </div>
+          </div>
+
+          <div class="card cmargin" style="background-color:#c5192d; color: white;">
+            <div class="card-body">
+            <div class="input-group mb-3">
+              <input type="checkbox"><h5>ODS 4: Educação de qualidade </h5>
+            </div>
+              Assegurar a educação inclusiva e equitativa e de qualidade, e promover oportunidades de aprendizagem ao longo da vida para todas e todos
+            </div>
+          </div>
+
+          <div class="card cmargin" style="background-color: #ff3a21; color: white;">
+            <div class="card-body">
+          <div class="input-group mb-3">
+            <input type="checkbox"><h5>ODS 5: Igualdade de gênero </h5>
+          </div>
+            Alcançar a igualdade de gênero e empoderar todas as mulheres e meninas
+          </div>
+        </div>
+          <div class="card cmargin" style="background-color: #26bde2; color: white;">
+            <div class="card-body">
+            <div class="input-group mb-3">
+              <input type="checkbox"><h5>ODS 6: Água potável e saneamento</h5>
+            </div>
+              Assegurar a disponibilidade e gestão sustentável da água e saneamento para todas e todos
+            </div>
+          </div>
+
+          <div class="card cmargin" style="background-color: #fcc30b; color: white;">
+            <div class="card-body">
+            <div class="input-group mb-3">
+              <input type="checkbox"><h5>ODS 7: Energia limpa e acessível</h5>
+            </div>
+              Assegurar o acesso confiável, sustentável, moderno e a preço acessível à energia para todas e todos
+            </div>
+          </div>
+
+          <div class="card cmargin" style="background-color: #a21942; color: white;">
+            <div class="card-body">
+            <div class="input-group mb-3">
+              <input type="checkbox"><h5>ODS 8: Trabalho descente e crescimento econômico</h5>
+            </div>
+              Promover o crescimento econômico sustentado, inclusivo e sustentável, emprego pleno e produtivo e trabalho decente para todas e todos
+            </div>
+          </div>
+
+          <div class="card cmargin" style="background-color: #fd6925; color: white;">
+            <div class="card-body">
+            <div class="input-group mb-3">
+              <input type="checkbox"><h5>ODS 9: Indústria, inovação e infraestrutura</h5>
+            </div>
+              Construir infraestruturas resilientes, promover a industrialização inclusiva e sustentável e fomentar a inovação
+            </div>
+          </div>
+          <div class="card cmargin" style="background-color: #dd1367; color: white;">
+            <div class="card-body">
+            <div class="input-group mb-3">
+              <input type="checkbox"><h5>ODS 10: Redução das desigualdades</h5>
+            </div>
+              Reduzir a desigualdade dentro dos países e entre eles
+            </div>
+          </div>
+          <div class="card cmargin" style="background-color: #fd9d24; color: white;">
+            <div class="card-body">
+            <div class="input-group mb-3">
+              <input type="checkbox"><h5>ODS 11: Cidades e comunidades sustentáveis</h5>
+            </div>
+              Tornar as cidades e os assentamentos humanos inclusivos, seguros, resilientes e sustentáveis
+            </div>
+          </div>
+          <div class="card cmargin" style="background-color: #c9992d; color: white;">
+            <div class="card-body">
+            <div class="input-group mb-3">
+              <input type="checkbox"><h5>ODS 12: Consumo e produção responsáveis</h5>
+              </div>
+              Assegurar padrões de produção e de consumo sustentáveis
+            </div>
+          </div>
+          <div class="card cmargin" style="background-color: #3f7e44; color: white;">
+            <div class="card-body">
+            <div class="input-group mb-3">
+              <input type="checkbox"><h5>ODS 13: Ação contra a mudança global do clima</h5>
+              </div>
+              Tomar medidas urgentes para combater a mudança climática e seus impactos (*)
+            </div>
+          </div>
+          <div class="card cmargin" style="background-color: #0a97d9; color: white;">
+            <div class="card-body">
+            <div class="input-group mb-3">
+              <input type="checkbox"><h5>ODS 14: Vida na água</h5>
+            </div>
+              Conservação e uso sustentável dos oceanos, dos mares e dos recursos marinhos para o desenvolvimento sustentável
+            </div>
+          </div>
+          <div class="card cmargin" style="background-color: #56c02b; color: white;">
+            <div class="card-body">
+            <div class="input-group mb-3">
+              <input type="checkbox"><h5>ODS 15: Vida Terrestre</h5>
+            </div>
+              Proteger, recuperar e promover o uso sustentável dos ecossistemas terrestres, gerir de forma sustentável as florestas, combater a desertificação, deter e reverter a degradação da terra e deter a perda de biodiversidade
+            </div>
+          </div>
+          <div class="card cmargin" style="background-color: #00689d; color: white;">
+            <div class="card-body">
+            <div class="input-group mb-3">
+              <input type="checkbox"><h5>ODS 16: Paz, justiça e instituições eficazes</h5>
+            </div>
+              Promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável, proporcionar o acesso à justiça para todos e construir instituições eficazes, responsáveis e inclusivas em todos os níveis
+            </div>
+          </div>
+          <div class="card cmargin" style="background-color: #19486a; color: white;">
+            <div class="card-body">
+            <div class="input-group mb-3">
+              <input type="checkbox"><h5>ODS 17: Parcerias e meios de implementação</h5>
+            </div>
+              Fortalecer os meios de implementação e revitalizar a parceria global para o desenvolvimento sustentável
+            </div>
+          </div>
+          <button class="dd-flex justify-content-md-center btn btn-primary" type="button">CONTRIBUIR</button>
+
+
+      </div>
+    </div>
+
+
+    <div class="tab-pane fade" id="amigxs" role="tabpanel" aria-labelledby="aba de amigæs">
+      <div class="d-flex flex-row flex-wrap">
+        <div class="card amigx">
+          <img class="card-img-top" src="../../assets/img/profilepic1.jpg">
+          <div class="card-footer">
+            <h5>Vittoria Borotto</h5>
+          </div>
+        </div>
+        <div class="card amigx">
+          <img class="card-img-top" src="../../assets/img/profilepic2.jpg">
+          <div class="card-footer">
+            <h5>Liliane Martins</h5>
+          </div>
+        </div>
+        <div class="card amigx">
+          <img class="card-img-top" src="../../assets/img/profilepic4.jpg">
+          <div class="card-footer">
+            <h5>Gilberto Moreira</h5>
+          </div>
+        </div>
+        <div class="card amigx">
+          <img class="card-img-top" src="../../assets/img/profilepic5.jpg">
+          <div class="card-footer">
+            <h5>Beatriz Senário</h5>
+          </div>
+        </div>
+        <div class="card amigx">
+          <img class="card-img-top" src="../../assets/img/profilepic6.jpg">
+          <div class="card-footer">
+            <h5>Rodrigo Gregoldo</h5>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<!-- Footer !!!!!!!!! -->
+<nav class="navbar navbar-expand navbar-dark bg-star mt-3" id="footer">
+  <div class="collapse navbar-collapse justify-content-center" id="navbarsExample08">
+    <ul class="navbar-nav">
+      <div class="row justify-content-around">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Quem somos
+            <!-- <span class="sr-only">(current)</span> --></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">|</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Ajuda</a>
+        </li>
+      </div>
+    </ul>
+  </div>
+</nav>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+<script>
+    function expandeProgressBar() {
+        var barraprogresso = document.getElementById("progress-bar");
+        var contris = document.getElementsByClassName("contribuicao");
+
+        if (barraprogresso.style.height === "10px") {
+            barraprogresso.style.height = "28px";
+            for (var i = 0; i < 3; i++) {
+                contris.item(i).style.display = "flex";
+            }
+        } else {
+            barraprogresso.style.height = "10px";
+            for (var i = 0; i < 3; i++) {
+                contris.item(i).style.display = "none";
+            }
+        }
+
+    }
+
+</script>
+<script>
+  $(function() {
+        var url = "https://api.adorable.io/avatars/108/abott@adorable.png"
+        $('#fotoPerfil').attr('src', 'url')
+
+  });
+</script>
+
+</body>

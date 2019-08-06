@@ -1,0 +1,225 @@
+<app-header></app-header>
+
+<nav class="painel-ods nav-scroller shadow-sm">
+  <div class="d-flex flex-column justify-content-center align-items-center">
+    <img height="auto"
+         src="../../assets/img/paineisOds/ods1.png" id="img-ods">
+    <button type="button" class="btn btn-primary">Ajudar hoje!</button>
+
+  </div>
+</nav>
+<!-- Nav tabs -->
+<ul class="nav nav-tabs bg-star mb-5 d-flex justify-content-around" id="myTab" role="tablist">
+  <li class="nav-pills">
+    <a class="nav-link active" id="amizades-tab" data-toggle="tab" href="#amizades" role="tab"
+       aria-controls="amizades" aria-selected="true">Amizades</a>
+  </li>
+  <li class="nav-pills">
+    <a class="nav-link" id="meioamb-tab" data-toggle="tab" href="#meioamb" role="tab" aria-controls="meioamb"
+       aria-selected="false">Meio-Ambiente</a>
+  </li>
+  <li class="nav-pills">
+    <a class="nav-link disabled" id="esporte-tab1" data-toggle="tab" href="#esporte" role="tab"
+       aria-controls="esporte" aria-selected="false">Esporte</a>
+  </li>
+  <li class="nav-pills">
+    <a class="nav-link disabled" id="esporte-tab" data-toggle="tab" href="#esporte" role="tab"
+       aria-controls="esporte" aria-selected="false">Cultura</a>
+  </li>
+  <li class="nav-pills">
+    <a class="nav-link disabled" id="esporte-tab2" data-toggle="tab" href="#esporte" role="tab"
+       aria-controls="esporte" aria-selected="false">Mundo</a>
+  </li>
+  <li class="nav-pills">
+    <a class="nav-link disabled" id="esporte-tab3" data-toggle="tab" href="#esporte" role="tab"
+       aria-controls="esporte" aria-selected="false">Educação</a>
+  </li>
+
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane active show" id="amizades" role="tabpanel" aria-labelledby="amizades-tab">
+    <div class="card-columns flash">
+
+      <!-- Módulo de criar post -->
+      <app-post-create></app-post-create>
+      <!-- Fim do módulo de criar post -->
+
+      <!-- Módulo de post de usuário -->
+
+      <!-- Fim do módulo de post de usuário -->
+
+  <app-post-list></app-post-list>
+      <div class="card">
+        <img src="../../assets/img/robert-bye-eyXArRm5tyY-unsplash.jpg" class="card-img-top" alt="cheese slices">
+        <div class="card-body">
+          <h5 class="card-title">
+            <div class="d-flex row">
+              <div class="col-5 col-md-2 my-2">
+                <img src="https://api.adorable.io/avatars/108/1.png" class="rounded-circle mx-auto d-block"
+                     alt="Foto de perfil" width="40px">
+              </div>
+              <div class="col-auto align-self-center pt-3">
+                <h5 class="card-title">@Amigo</h5>
+              </div>
+            </div>
+          </h5>
+          <p class="card-text">Final de semana pegando umas ondas.</p>
+
+          <p class="card-text">
+            <small><i class="fas fa-star"></i>
+              <a href="" class="card-link">102</a></small>
+          </p>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+
+  <div class="tab-pane fade" id="meioamb" role="tabpanel" aria-labelledby="meioamb-tab">
+    <div class="card-columns">
+
+      <div class="card">
+        <img src="../../assets/img/amb1.jpg" class="card-img-top" alt="amigo">
+        <div class="card-body">
+
+          <div class="d-flex row">
+            <div class="col-5 col-md-2 my-2">
+              <img src="https://api.adorable.io/avatars/108/3.png" class="rounded-circle mx-auto d-block"
+                   alt="Foto de perfil" width="40px">
+            </div>
+            <div class="col-auto align-self-center pt-3">
+              <h5 class="card-title">@Amigo</h5>
+            </div>
+          </div>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+            additional content. This content is a little bit longer.</p>
+          <p class="card-text">
+            <small><i class="fas fa-star"></i>
+              <a href="" class="card-link">42</a></small>
+          </p>
+        </div>
+      </div>
+      <div class="card p-3">
+        <blockquote class="blockquote mb-0 card-body">
+          <div class="d-flex row">
+            <div class="col-5 col-md-2 my-2">
+              <img src="https://api.adorable.io/avatars/108/8.png" class="rounded-circle mx-auto d-block"
+                   alt="Foto de perfil" width="40px">
+            </div>
+            <div class="col-auto align-self-center pt-3">
+              <h5 class="card-title">@Amigo</h5>
+            </div>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          <p class="card-text">
+            <small><i class="fas fa-star"></i>
+              <a href="" class="card-link">20</a></small>
+          </p>
+        </blockquote>
+      </div>
+      <div class="card">
+        <img src="../../assets/img/amb2.jpg" class="card-img-top" alt="cheese wiht holes">
+        <div class="card-body">
+
+          <div class="d-flex row">
+            <div class="col-5 col-md-2 my-2">
+              <img src="https://api.adorable.io/avatars/108/5.png" class="rounded-circle mx-auto d-block"
+                   alt="Foto de perfil" width="40px">
+            </div>
+            <div class="col-auto align-self-center pt-3">
+              <h5 class="card-title">@Amigo</h5>
+            </div>
+          </div>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional
+            content.</p>
+          <p class="card-text">
+            <small><i class="fas fa-star"></i>
+              <a href="" class="card-link">20</a></small>
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../../assets/img/amb3.jpg" class="card-img-top" alt="cheesy pizza!">
+        <div class="card-body">
+          <div class="d-flex row">
+            <div class="col-5 col-md-2 my-2">
+              <img src="https://api.adorable.io/avatars/108/9.png" class="rounded-circle mx-auto d-block"
+                   alt="Foto de perfil" width="40px">
+            </div>
+            <div class="col-auto align-self-center pt-3">
+              <h5 class="card-title">@Amigo</h5>
+            </div>
+          </div>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional
+            content.</p>
+          <p class="card-text">
+            <small><i class="fas fa-star"></i>
+              <a href="" class="card-link">15</a></small>
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <div class="d-flex row">
+            <div class="col-5 col-md-2 my-2">
+              <img src="https://api.adorable.io/avatars/108/11.png" class="rounded-circle mx-auto d-block"
+                   alt="Foto de perfil" width="40px">
+            </div>
+            <div class="col-auto align-self-center pt-3">
+              <h5 class="card-title">@Amigo</h5>
+            </div>
+          </div>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional
+            content.</p>
+          <p class="card-text">
+            <small><i class="fas fa-star"></i>
+              <a href="" class="card-link">31</a></small>
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <div class="d-flex row">
+            <div class="col-5 col-md-2 my-2">
+              <img src="https://api.adorable.io/avatars/108/10.png" class="rounded-circle mx-auto d-block"
+                   alt="Foto de perfil" width="40px">
+            </div>
+            <div class="col-auto align-self-center pt-3">
+              <h5 class="card-title">@Amigo</h5>
+            </div>
+          </div>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional
+            content.</p>
+          <p class="card-text">
+            <small><i class="fas fa-star"></i>
+              <a href="" class="card-link">5</a></small>
+          </p>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="tab-pane fade" id="esporte" role="tabpanel" aria-labelledby="esporte-tab">
+    <div class="card-columns">
+      <!-- Módulo de criar post -->
+      <div class="card post-box">
+        <form action="get">
+                        <textarea rows="4" class="form-control" id="texto"
+                                  placeholder="O que está acontecendo?"></textarea>
+        </form>
+        <div class="btn-group" role="group" aria-label="Basic example" style="width:100%;">
+          <button type="button" class="btn btn-secondary"><i class="far fa-images"></i></button>
+          <button type="button" class="btn btn-primary"><i class="fas fa-plus"></i></button>
+        </div>
+      </div>
+      <!-- Fim do módulo de comentário -->
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,41 @@
+<app-header></app-header>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div *ngIf="token.getRoleType() === 'user'">
+
+  <h3>Inserir Pessoa</h3>
+  <div style="width: 400px;">
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="nome">Nome</label>
+        <input type="text" class="form-control" id="nome" required [(ngModel)]="pessoa.nome" name="nome">
+      </div>
+
+      <div class="form-group">
+        <label for="sobrenome">Sobrenome</label>
+        <input type="text" class="form-control" id="sobrenome" required [(ngModel)]="pessoa.sobrenome" name="sobrenome">
+      </div>
+
+      <div class="form-group">
+        <label for="cidade">Cidade</label>
+        <input type="text" class="form-control" id="cidade" required [(ngModel)]="pessoa.cidade" name="cidade">
+      </div>
+
+      <button class="btn btn-success">Salvar</button>
+    </form>
+  </div>
+
+</div>
+
+<div *ngIf="!token.getRoleType()" class="nav-item">
+  <p style="font-size: 3rem;">
+    Para acessar o conteúdo, é necessário efetuar o login no sistema... <a class="nav-link" href="#" (click)="goToLogin()">Login</a>
+  </p>
+</div>
+
+<app-footer></app-footer>

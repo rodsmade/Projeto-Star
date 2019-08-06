@@ -1,0 +1,7 @@
+.bg-primary, .btn-primary, .nav-pills .nav-link.active{
+  background-color: #e63e3b;
+}
+
+.btn-primary{
+  border-color: #e63e3b;
+}

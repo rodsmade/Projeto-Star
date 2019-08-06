@@ -1,0 +1,247 @@
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+.bg-star{
+  background-image: url(../../assets/img/dots.png);
+  background-color: #171941;
+  background-repeat: repeat;
+  background-size: cover;
+}
+.cmargin{
+  margin-bottom: 20px;
+}
+
+a{
+  color: #e63e3b;
+}
+
+.bg-primary, .btn-primary, .nav-pills .nav-link.active{
+  background-color: #e63e3b;
+}
+
+.btn-primary{
+  border-color: #e63e3b;
+}
+
+textarea.form-control{
+  border: 1px solid rgba(230, 62, 59,.6);
+}
+
+.card{
+  border: 1px solid rgba(230, 62, 59,.6);
+}
+
+.nav-tabs .nav-link.active{
+  border-color: white;
+}
+
+.post-box{
+  border: 0px;
+}
+
+.amigx{
+  width: 13em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+.amigx:nth-child(5n+5){
+  margin-right: 0px;
+}
+
+.amigx img{
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border-radius: calc(.25rem - 1px);
+  width: 100%;
+  height: auto;
+}
+
+a:hover{
+  color: #e63e3b;
+}
+
+.nav-tabs .nav-link:hover {
+  border-color: white;
+}
+
+.col{
+  padding-right: 0px;
+  padding-left: 5px;
+}
+
+.profilepic{
+  top: -60px;
+  left:20px;
+  z-index: 2;
+}
+
+#footer{
+  border-top: 2px solid #435DB5;
+  padding: 0px;
+  height: 4em;
+}
+
+.row .card-img{
+  width: 155px;
+  height: auto;
+}
+
+.navbar{
+  padding: 0 1rem;
+}
+
+.bd-navbar{
+  height: 4em;
+}
+
+#more{
+  display: none;
+}
+
+.foto-cover{
+  background-color: #2a2730;
+  display:flex;
+  justify-content: center;
+}
+
+.foto-cover img{
+  width:100%;
+  height:auto;
+  max-height:200px;
+}
+
+.progress{
+  border:1px;
+}
+
+.contribuicao{
+  display: none;
+}
+
+.nav-pills .nav-link.active{
+  color: #e63e3b;
+  background-color: white;
+}
+
+.fa-star{
+  color: #e14eca;
+}
+
+.fa-star:hover{
+  font-weight: 600;
+  color: #e14eca;
+}
+
+.bd-navbar {
+  min-height: 4rem;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
+}
+
+.btn-bd-download {
+  font-weight: 600;
+  color: #e14eca;
+  border-color: #e14eca;
+}
+
+.btn-bd-download:active, .btn-bd-download:hover {
+  color: #2a2730;
+  background-color: #e14eca;
+  border-color: #e14eca;
+}
+
+.fa-star{
+  color: #e14eca;
+}
+
+.fa-star:hover{
+  font-weight: 600;
+  color: #e14eca;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(226, 82, 202,0.75);
+}
+
+.tab-content{
+  padding: 0px;
+}
+
+.nav-tabs{
+  position:sticky;
+  top:4rem;
+}
+
+#myTab{
+  z-index: 1;
+}
+
+.ods1{
+  background: #e63e3b;
+}
+
+.ods2{
+  background: #dda53a;
+}
+
+.ods3{
+  background: #519f38;
+}
+
+.ods4{
+  background: #c7342d;
+}
+
+.ods5{
+  background: #e93f33;
+}
+
+.ods6{
+  background: #53bee3;
+}
+
+.ods7{
+  background: #f8c333;
+}
+
+.ods8{
+  background: #a12b42;
+}
+
+.ods9{
+  background: #ec6633;
+}
+
+.ods10{
+  background: #df4067;
+}
+
+.ods11{
+  background: #f29c33;
+}
+
+.ods12{
+  background: #bf8b2e;
+}
+
+.ods13{
+  background: #3e7e44;
+}
+
+.ods14{
+  background: #3998da;
+}
+
+.ods15{
+  background: #64c02d;
+}
+
+.ods16{
+  background: #23699e;
+}
+
+.ods17{
+  background: #1a476a;
+}
+

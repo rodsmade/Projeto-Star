@@ -1,0 +1,104 @@
+<body>
+<div class="container pt-5" style="padding-bottom: 110px;">
+  <div class="row justify-content-between">
+    <div class="col-12 col-sm-6 d-flex align-items-center">
+
+      <div class="night">
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+      </div>
+
+      <h1 class="welcome pb-5">Configurações</h1>
+
+
+    </div>
+    <div class="col-auto col-sm-auto">
+      <div class="card p-3 float-right">
+        <div *ngIf="token.getRoleType() === 'user'">
+        <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+          <div class="form-row align-items-center">
+            <div class="col-auto">
+
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="form-row align-items-space-around">
+
+            <div class="col-12 col-md-6">
+
+            </div>
+            <div class="col-12 col-md-6">
+            </div>
+          </div>
+
+
+            <div class="form-group">
+            <label for="cidade" class="titulo">Email</label>
+            <input type="email" class="form-control" formControlName="cidade" id="cidade" aria-describedby="emailHelp" placeholder="nome@exemplo.com.br" required>
+            <small id="emailHelp" class="form-text text-muted">Não compartilharemos seu email com ninguém!</small>
+          </div>
+
+          <label for="inputNome" class="titulo">Nome</label>
+          <div class="form-row align-items-space-around">
+            <div class="col-12 col-md-6">
+              <input type="text" class="form-control mb-2" id="inputNome" formControlName="nome" placeholder="Nome">
+            </div>
+            <div class="col-12 col-md-6">
+              <label class="sr-only" for="inlineFormInput">Sobrenome</label>
+              <input type="text" class="form-control mb-2"  id="inlineFormInput"  formControlName="sobrenome" placeholder="Sobrenome">
+            </div>
+
+          </div>
+
+
+          <div class="form-group">
+            <div class="form-check text-left">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox">
+                <p id="aceito">Confirmar atualização de dados</p>
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary float-none">Salvar</button>
+        </form>
+      </div>
+    </div>
+    </div>
+  </div>
+  </div>
+<div *ngIf="!token.getRoleType()" class="nav-item">
+  <p style="font-size: 3rem;">
+    Para acessar o conteúdo, é necessário efetuar o login no sistema... <a class="nav-link" href="#" (click)="goToLogin()">Login</a>
+  </p>
+</div>
+
+
+
+
+
+
+
+</body>

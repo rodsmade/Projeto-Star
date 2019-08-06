@@ -1,0 +1,22 @@
+<div *ngIf="token.getRoleType() === 'user'">
+  <hr/>
+  <div *ngIf="user">
+    <div>
+      <label><strong>Usuário: </strong> Jorgeifj</label> {{ user.username }}
+    </div>
+    <div>
+      <label><strong>Nome: </strong>Jorge</label> {{ user.name }}
+    </div>
+    <div>
+      <label><strong>Sobrenome: </strong> Ferreira</label> {{ user.sobrenome }}
+    </div>
+    <div>
+      <label><strong>E-mail: </strong>Jorge@digitalhouse.com</label> {{ user.email }}
+    </div>
+    <div>
+      <label><strong>Data de Nascimento: </strong>18/07/1990</label> {{ user.nascimento }}
+    </div>
+  </div>
+  <button class="btn btn-info" style="margin-left: 20px;">Configurações</button>
+
+</div>
