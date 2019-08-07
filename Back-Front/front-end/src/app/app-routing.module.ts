@@ -13,6 +13,8 @@ import {PerfilComponent} from './perfil/perfil.component';
 import {SobrenosComponent} from './sobrenos/sobrenos.component';
 import {PostCreateComponent} from './post/post-create/post-create.component';
 import {PostListComponent} from './post/post-list/post-list.component';
+import {ConfigurePagComponent} from './configure-pag/configure-pag.component';
+
 
 const routes: Routes = [
   {
@@ -30,6 +32,10 @@ const routes: Routes = [
 
   },
   {
+    path: 'config',
+    component: ConfigurePagComponent
+  },
+  {
     path: 'sobrenos',
     component: SobrenosComponent
   },
@@ -41,6 +47,7 @@ const routes: Routes = [
     path: 'adicionar-pessoa',
     component: PessoaCreateComponent
   },
+
   {
     path: 'editar-pessoa/:id',
     component: PessoaEditComponent

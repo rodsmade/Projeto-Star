@@ -22,6 +22,8 @@ import { SobrenosComponent } from './sobrenos/sobrenos.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { PostCreateComponent } from './post/post-create/post-create.component';
 import { PostListComponent } from './post/post-list/post-list.component';
+import { ConfigurePagComponent } from './configure-pag/configure-pag.component';
+
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { PostListComponent } from './post/post-list/post-list.component';
     SobrenosComponent,
     UserDetailsComponent,
     PostCreateComponent,
-    PostListComponent
+    PostListComponent,
+    ConfigurePagComponent,
+
   ],
   imports: [
     BrowserModule,

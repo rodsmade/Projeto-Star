@@ -30,4 +30,5 @@ export class UserDetailsComponent implements OnInit {
       }, error => console.log(error));
   }
 
+
 }

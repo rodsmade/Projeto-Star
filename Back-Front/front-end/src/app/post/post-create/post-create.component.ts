@@ -29,5 +29,8 @@ export class PostCreateComponent implements OnInit {
   goToLogin() {
     this.router.navigate(['login']);
   }
+  exit() {
+    location.reload();
+  }
 
 }
