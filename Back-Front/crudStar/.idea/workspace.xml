@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5dd937cf-354c-4629-bf14-9d80cdfbcf79" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/authentication/AuthenticationResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/authentication/AuthenticationResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/controller/ComentarioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/controller/ComentarioController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/controller/DadosPessoaisController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/controller/DadosPessoaisController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/controller/PostController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/controller/PostController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/security/LoginRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/security/LoginRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/security/SignUpRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/security/SignUpRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/security/jwt/JwtAuthenticationFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/security/jwt/JwtAuthenticationFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/security/jwt/JwtAuthenticationResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/security/jwt/JwtAuthenticationResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/security/jwt/JwtTokenProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/security/jwt/JwtTokenProvider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/user/CustomUserDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/user/CustomUserDetailsService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/user/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/user/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/user/UserPrincipal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/star/crudStar/user/UserPrincipal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/package-lock.json" afterDir="false" />
-    </list>
+    <list default="true" id="5dd937cf-354c-4629-bf14-9d80cdfbcf79" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +56,9 @@
       <updated>1565124021543</updated>
       <workItem from="1565124026592" duration="1406000" />
       <workItem from="1565134591787" duration="894000" />
+      <workItem from="1565187013553" duration="1953000" />
+      <workItem from="1565193969608" duration="1961000" />
+      <workItem from="1565306089000" duration="570000" />
     </task>
     <servers />
   </component>

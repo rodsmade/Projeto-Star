@@ -88,10 +88,10 @@
                     <div class="form-group">
                       <label for="password"><strong>Senha</strong></label>
                       <input type="password" class="form-control" id="password" name="password" placeholder="Senha"
-                             [(ngModel)]="form.password" #password="ngModel" required minlength="8"/>
+                             [(ngModel)]="form.password" #password="ngModel" required minlength="3"/>
                       <div *ngIf="f.submitted && password.invalid">
                         <div *ngIf="password.errors.required"><span class="error">Por favor, preencha o campo senha</span></div>
-                        <div *ngIf="password.errors.minlength"><span class="error">O campo senha deve ter mais que 8 caracteres</span></div>
+                        <div *ngIf="password.errors.minlength"><span class="error">O campo senha deve ter mais que 3 caracteres</span></div>
                       </div>
                     </div>
                 </div>
